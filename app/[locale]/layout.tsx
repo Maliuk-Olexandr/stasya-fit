@@ -6,11 +6,13 @@ import {
   Notable,
   Oswald,
 } from "next/font/google";
-import "../globals.css";
+import "./globals.css";
 
-import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Header } from "@/modules/components/Header/Header";
+import { setRequestLocale, getMessages } from "next-intl/server";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--cormorant-garamond-font",
@@ -44,6 +46,9 @@ const oswald = Oswald({
   style: ["normal"],
 });
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.svg",
+  },
   title: "Stasya Fit",
   description:
     "Get a fully personalised workout plan, clear guidance, and full support during every session. I help you train safely, build strength, improve your form, and reach your goals faster — with a program created just for your body and lifestyle.",
@@ -84,22 +89,33 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: Readonly<{
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
-}>) {
-  const { locale } = await params;
+};
 
+export default async function LocaleLayout({ children, params }: Props) {
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  // Enable static rendering
+  setRequestLocale(locale);
+  console.log("LocaleLayout locale:", locale);
+
   return (
     <html lang={locale}>
-      <body className={`${cormorantGaramond.variable} ${montserrat.variable} ${redditMono.variable} ${notable.variable} ${oswald.variable}`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body
+        className={`${cormorantGaramond.variable} ${montserrat.variable} ${redditMono.variable} ${notable.variable} ${oswald.variable}`}
+      ><NextIntlClientProvider>
+        <Header />
+        {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

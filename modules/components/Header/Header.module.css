@@ -1,0 +1,68 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.desktopNav,
+.bookingLink {
+  display: none;
+}
+.mobileMenuButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileNav {
+    display: none;
+  }
+
+  .bookingLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--th-text-color);
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 10px;
+    font-size: 18px;
+    max-width: 160px;
+  }
+
+  /* Desktop navigation styles */
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 24px;
+  }
+  .navLink:hover,
+  .navLink:focus,
+  .navLink:active {
+    color: var(--th-text-color);
+    scale: 1.1;
+  }
+  .active {
+    color: var(--th-text-color);
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .bookingLink {
+    padding: 10px 28px;
+    font-size: 16px;
+    max-width: 237px;
+  }
+  .desktopNav {
+    gap: 64px;
+  }
+}
+

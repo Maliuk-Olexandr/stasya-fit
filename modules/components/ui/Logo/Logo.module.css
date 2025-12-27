@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.fit {
+  color: var(--th-text-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    font-size: 36px;
+  }
+}

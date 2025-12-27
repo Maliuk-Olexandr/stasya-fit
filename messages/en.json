@@ -1,4 +1,11 @@
 {
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "training": "Training",
+    "nutrition": "Nutrition",
+    "consultation": "Book Free Consultation"
+  },
   "HomePage": {
     "title": "Hello world!"
   }

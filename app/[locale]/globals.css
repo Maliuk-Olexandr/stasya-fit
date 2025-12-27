@@ -68,11 +68,11 @@ img {
 
   --background: #fffaf0;
   --foreground: #efdecd;
-  --rewivies-background: #FFEDDC;
+  --rewivies-background: #ffeddc;
 
   --main-text-color: #000000;
   --secondary-text-color: #fff;
-  --th-text-color: #CD5700;
+  --th-text-color: #cd5700;
 }
 
 /* dark theme disabled until ready */
@@ -94,10 +94,10 @@ html {
 html,
 body {
   font-family: var(--cormorant-garamond-font);
-  color: var(--main-text-color);  background: var(--background);
+  color: var(--main-text-color);
+  background: var(--background);
   font-size: 32px;
   line-height: 1.5;
-
 }
 
 a,
@@ -107,7 +107,7 @@ input,
 input::placeholder {
   transition-duration: 250ms;
   transition-property: background-color, color, border-color, box-shadow, fill,
-    stroke, opacity, transform;
+    stroke, opacity, transform, scale;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -116,7 +116,7 @@ input::placeholder {
 /* container */
 .container {
   min-width: 320px;
-  max-width: 375px;
+  max-width: 380px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -133,7 +133,7 @@ section {
 /* Styles for PC */
 @media only screen and (min-width: 1440px) {
   section {
-    padding: 112px 0;
+    padding: 100px 0;
   }
   .container {
     max-width: 1440px;
