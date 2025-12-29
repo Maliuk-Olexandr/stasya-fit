@@ -73,6 +73,7 @@ img {
   --main-text-color: #000000;
   --secondary-text-color: #fffcfc;
   --th-text-color: #cd5700;
+  --th-text-accent-color: #b95000;
 }
 
 /* dark theme disabled until ready */
@@ -116,7 +117,7 @@ input::placeholder {
 /* container */
 .container {
   min-width: 320px;
-  max-width: 380px;
+  max-width: 767px;
   margin: 0 auto;
   padding: 0 20px;
 }

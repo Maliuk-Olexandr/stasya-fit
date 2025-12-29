@@ -38,11 +38,15 @@
     gap: 10px;
     font-size: 24px;
   }
+  .navLink {
+    display: inline-block;
+  }
+
   .navLink:hover,
   .navLink:focus,
   .navLink:active {
-    color: var(--th-text-color);
-    scale: 1.1;
+    color: var(--th-text-accent-color);
+    transform: scale(1.05);
   }
   .active {
     color: var(--th-text-color);

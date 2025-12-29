@@ -7,6 +7,7 @@
 
 .link:hover, .link:focus {
   text-decoration: underline;
+  color:var(--th-text-color)
 }
 
 .active {

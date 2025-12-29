@@ -10,6 +10,12 @@
     padding: 10px;
     font-size: 18px;
     max-width: 160px;
+    border-radius: 2px;
+    border: 1px solid var(--th-text-accent-color);
+  }
+  .link:hover,
+  .link:focus {
+    background-color: var(--th-text-accent-color);
   }
 
 @media screen and (min-width: 1440px) {
