@@ -12,39 +12,40 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/modules/components/Header/Header";
-import { setRequestLocale, getMessages } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 const cormorantGaramond = Cormorant_Garamond({
-  variable: "--cormorant-garamond-font",
+  variable: "--cormorant-garamond",
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
 const montserrat = Montserrat({
-  variable: "--montserrat-font",
+  variable: "--montserrat",
   subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "700"],
   style: ["normal", "italic"],
 });
 const redditMono = Reddit_Mono({
-  variable: "--reddit-font",
+  variable: "--reddit-mono",
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal"],
 });
 const notable = Notable({
-  variable: "--notable-font",
+  variable: "--notable",
   subsets: ["latin"],
   weight: ["400"],
   style: ["normal"],
 });
 const oswald = Oswald({
-  variable: "--display-oswald-font",
+  variable: "--display-oswald",
   subsets: ["latin"],
   weight: ["700"],
   style: ["normal"],
 });
+
 export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
@@ -112,9 +113,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale}>
       <body
         className={`${cormorantGaramond.variable} ${montserrat.variable} ${redditMono.variable} ${notable.variable} ${oswald.variable}`}
-      ><NextIntlClientProvider>
-        <Header />
-        {children}
+      >
+        <NextIntlClientProvider>
+          <Header />
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>

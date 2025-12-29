@@ -10,16 +10,24 @@
 
 .container {
   padding: 626px 16px 26px;
+  position: relative;
 }
 
 .title {
   color: var(--secondary-text-color);
   font-size: 48px;
   text-transform: uppercase;
-  font-family: var(--notable-font);
+  font-family: var(--notable);
 }
 
-@media screen and (min-width: 768px) {
+.languageSwitcher {
+  color: var(--secondary-text-color);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media screen and (min-width: 1440px) {
   .section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       image-set(url(/HeroDesk.webp) 1x, url(/HeroDesk@2x.webp) 2x);
@@ -33,4 +41,9 @@
   .title {
     font-size: 92px;
   }
+  .languageSwitcher {
+    top: 20px;
+    right: 20px;
+  }
+
 }

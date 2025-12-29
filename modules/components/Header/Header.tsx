@@ -1,22 +1,23 @@
-import Link from "next/link";
 import clsx from "clsx";
 import css from "./Header.module.css";
 import { Logo } from "@/modules/components/ui/Logo/Logo";
 import { DesktopNav } from "./DesktopNav";
-import { useTranslations } from "next-intl";
 import { MobileNav } from "./MobileNav";
+import { LinkButton } from "../ui/LinkButton/LinkButton";
+import { useTranslations } from "next-intl";
 
 export function Header() {
   const t = useTranslations("Header");
-
   return (
     <header>
       <div className={clsx("container", css.headerContainer)}>
         <Logo />
         <DesktopNav />
-        <Link className={css.bookingLink} href="/consultation">
-          {t("consultation")}
-        </Link>
+        <LinkButton
+          className={css.desktopOnly}
+          label={t("consultation")}
+          href="/consultation"
+        />
         <MobileNav />
       </div>
     </header>

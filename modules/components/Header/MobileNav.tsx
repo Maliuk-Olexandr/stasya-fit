@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import { useNavigationStore } from "@/modules/store/useAppStore";
 import { mainNavLinks } from "@/modules/constants/navLink";
+import { LinkButton } from "../ui/LinkButton/LinkButton";
+import { LanguageSwitcher } from "../ui/LanguageSwitcher/LanguageSwitcher";
 
 export function MobileNav() {
   const t = useTranslations("Header");
@@ -12,25 +14,23 @@ export function MobileNav() {
     useNavigationStore();
 
   return (
-    <div className={css.mobileNav}>
+    <div className={clsx(css.mobileNav)}>
       <button
         className={css.mobileMenuButton}
         onClick={toggleMobileMenu}
         aria-label="Mobile menu"
       >
-        {isMobileMenuOpen ? (
           <svg width={32} height={32}>
-            <use href="/icons.svg#close"></use>
+            <use href={isMobileMenuOpen ? "/icons.svg#close" : "/icons.svg#burger"}></use>
           </svg>
-        ) : (
-          <svg width={32} height={32}>
-            <use href="/icons.svg#burger"></use>
-          </svg>
-        )}
       </button>
-        <div className={clsx("container", css.backdrop, isMobileMenuOpen && css.mobileMenuOpen)}>
-          <nav >
-            <ul>
+
+        <div
+          className={clsx(css.backdrop, isMobileMenuOpen && css.mobileMenuOpen)}
+        >
+          <nav className={css.mobileMenu}>
+            <LanguageSwitcher />
+            <ul className={css.mobileMenuList}>
               {mainNavLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} onClick={closeMobileMenu}>
@@ -39,8 +39,13 @@ export function MobileNav() {
                 </li>
               ))}
             </ul>
+            <LinkButton
+              className={css.mobileOnly}
+              label={t("consultation")}
+              href="/consultation"
+            />
           </nav>
         </div>
-      </div>
+    </div>
   );
 }

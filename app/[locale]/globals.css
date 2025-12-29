@@ -60,11 +60,11 @@ img {
 }
 
 :root {
-  --main-font: var(--cormorant-garamond-font), serif;
-  --secondary-font: var(--montserrat-font), sans-serif;
-  --reddit-mono-font: var(--reddit-font), monospace;
-  --notable-font: var(--notable-font), cursive;
-  --display-font: var(--display-oswald-font), sans-serif;
+  --cormorant-garamond: 'Cormorant Garamond', serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --reddit-mono: 'Reddit Mono', monospace;
+  --notable: 'Notable', cursive;
+  --display-oswald: 'Oswald', sans-serif;
 
   --background: #fffaf0;
   --foreground: #efdecd;
@@ -93,7 +93,7 @@ html {
 
 html,
 body {
-  font-family: var(--cormorant-garamond-font);
+  font-family: var(--cormorant-garamond);
   color: var(--main-text-color);
   background: var(--background);
   font-size: 32px;
