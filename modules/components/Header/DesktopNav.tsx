@@ -16,19 +16,30 @@ export function DesktopNav() {
     <nav>
       <ul className={css.desktopNav}>
         {mainNavLinks.map((link) => {
-          const isActive = isActiveLink(link.href, pathname, locale);
-          return(
-          <li key={link.href}>
-            <Link
-              className={clsx(css.navLink, {
-                [css.active]: isActive,
-              })}
-              href={link.href}
-            >
-              {t(link.labelKey)}
-            </Link>
-          </li>
-        )})}
+          const isActive = link.hash
+            ? false
+            : isActiveLink(link.href, pathname, locale);
+          const isAnchorLink = !!link.hash && pathname === "/";
+          const href = isAnchorLink
+            ? `#${link.hash}`
+            : {
+                pathname: link.href,
+                hash: link.hash,
+            };
+        
+          return (
+            <li key={link.labelKey}>
+              <Link
+                className={clsx(css.navLink, {
+                  [css.active]: isActive,
+                })}
+                href={href}
+              >
+                {t(link.labelKey)}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

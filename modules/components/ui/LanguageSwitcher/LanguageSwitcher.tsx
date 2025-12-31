@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { LOCALES } from "@/modules/constants/locales";
 import css from "./LanguageSwitcher.module.css";

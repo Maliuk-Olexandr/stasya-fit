@@ -10,7 +10,7 @@ import { LinkButton } from "../ui/LinkButton/LinkButton";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher/LanguageSwitcher";
 import { isActiveLink } from "@/modules/utils/isActiveLink";
 import { useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
+import { usePathname } from "@/i18n/navigation";
 
 export function MobileNav() {
   const t = useTranslations("Header");
@@ -38,15 +38,24 @@ export function MobileNav() {
           <LanguageSwitcher />
           <ul className={css.mobileMenuList}>
             {mainNavLinks.map((link) => {
-              const isActive = isActiveLink(link.href, pathname, locale);
+              const isActive = link.hash
+                ? false
+                : isActiveLink(link.href, pathname, locale);
+              const isAnchorLink = !!link.hash && pathname === "/";
+              const href = isAnchorLink
+                ? `#${link.hash}`
+                : {
+                    pathname: link.href,
+                    hash: link.hash,
+                  };
 
               return (
-                <li key={link.href}>
+                <li key={link.labelKey}>
                   <Link
                     className={clsx(css.navLink, {
                       [css.active]: isActive,
                     })}
-                    href={link.href}
+                    href={href}
                     onClick={closeMobileMenu}
                   >
                     {t(link.labelKey)}

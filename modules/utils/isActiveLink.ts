@@ -1,10 +1,9 @@
-
-
 export function isActiveLink(href: string, pathname: string, locale: string) {
-  if (!pathname || !locale) return false;
+  if (!pathname) return false;
 
-  const pathWithoutLocale =
-    pathname.replace(new RegExp(`^/${locale}`), "") || "/";
+  const normalizedPath = pathname.startsWith(`/${locale}`)
+    ? pathname.slice(locale.length + 1) || "/"
+    : pathname;
 
-  return pathWithoutLocale === href || pathWithoutLocale.startsWith(href + "/");
+  return normalizedPath === href;
 }

@@ -110,7 +110,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   console.log("LocaleLayout locale:", locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <body
         className={`${cormorantGaramond.variable} ${montserrat.variable} ${redditMono.variable} ${notable.variable} ${oswald.variable}`}
       >
