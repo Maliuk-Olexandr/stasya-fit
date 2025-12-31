@@ -1,11 +1,10 @@
-.mobileOnly{
+.mobileOnly {
   display: flex;
 }
 .desktopNav,
 .desktopOnly {
   display: none;
 }
-
 
 .headerContainer {
   display: flex;
@@ -15,7 +14,7 @@
   padding-bottom: 10px;
 }
 
-.mobileMenuButton{
+.mobileMenuButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +35,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .navLink {
     display: inline-block;
@@ -54,8 +53,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-   .desktopNav {
+  .desktopNav {
     gap: 64px;
   }
 }
-

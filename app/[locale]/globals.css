@@ -60,11 +60,11 @@ img {
 }
 
 :root {
-  --cormorant-garamond: 'Cormorant Garamond', serif;
-  --montserrat: 'Montserrat', sans-serif;
-  --reddit-mono: 'Reddit Mono', monospace;
-  --notable: 'Notable', cursive;
-  --display-oswald: 'Oswald', sans-serif;
+  --cormorant-garamond: "Cormorant Garamond", serif;
+  --montserrat: "Montserrat", sans-serif;
+  --reddit-mono: "Reddit Mono", monospace;
+  --notable: "Notable", cursive;
+  --display-oswald: "Oswald", sans-serif;
 
   --background: #fffaf0;
   --foreground: #efdecd;
@@ -90,15 +90,14 @@ img {
 /* main settings */
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
-html,
 body {
   font-family: var(--cormorant-garamond);
   color: var(--main-text-color);
   background: var(--background);
-  font-size: 32px;
-  line-height: 1.5;
+  font-size: 2rem;
 }
 
 a,

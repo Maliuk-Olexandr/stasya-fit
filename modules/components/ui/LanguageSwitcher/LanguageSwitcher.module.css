@@ -1,13 +1,14 @@
 .switcher {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: var(--montserrat);
 }
 
-.link:hover, .link:focus {
+.link:hover,
+.link:focus {
   text-decoration: underline;
-  color:var(--th-text-color)
+  color: var(--th-text-color);
 }
 
 .active {

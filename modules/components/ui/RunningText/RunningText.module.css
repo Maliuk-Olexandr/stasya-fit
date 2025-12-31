@@ -1,0 +1,40 @@
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--th-text-color);
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+
+  width: max-content;
+  animation: marquee 150s linear infinite;
+}
+
+.track span {
+  white-space: nowrap;
+  /* font-family: var(--montserrat); */
+  font-weight: 600;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee:hover .track {
+  animation-play-state: paused;
+}
+
+@media screen and (min-width: 768px) {
+  .track {
+    gap: 40px;
+  }
+  .track span {
+    font-size: 1.25rem;
+  }
+}

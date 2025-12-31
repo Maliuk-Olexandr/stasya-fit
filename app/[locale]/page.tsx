@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 
 import HeroSection from "@/modules/components/11_Hero/Hero";
 import AboutMeSection from "@/modules/components/12_AboutMe/AboutMe";
+import RunningText from "@/modules/components/ui/RunningText/RunningText";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -25,6 +26,7 @@ export default function HomePage({ params }: PageProps) {
     <>
       <HeroSection />
       <AboutMeSection />
+      <RunningText />
     </>
   );
 }
