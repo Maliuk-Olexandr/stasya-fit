@@ -6,10 +6,11 @@
     "nutrition": "Nutrition",
     "consultation": "Book Free Consultation"
   },
- 
+
   "Hero": {
     "title": "Anastasiia Zhazhko"
   },
+
   "AboutMe": {
     "title": "About Me",
     "description": {
@@ -27,10 +28,51 @@
       "part3": "My goal is to make sport not just a temporary hobby, but a source of strength, energy, and confidence every day"
     },
     "experience": {
-      "exp1": { "title": "Years of experience","description": "9" },
+      "exp1": { "title": "Years of experience", "description": "9" },
       "exp2": { "title": "Awards", "description": "25" },
       "exp3": { "title": "Clients", "description": "1245" },
       "exp4": { "title": "Training hours", "description": "10567" }
     }
+  },
+  
+  "Course List": {
+    "title": "Course List",
+    "course1": {
+      "name": "Personal Training",
+      "description": {
+        "title": "Individual workouts tailored to your goals",
+        "features": {
+          "part1": "Customized training plans",
+          "part2": "One-on-one coaching",
+          "part3": "Progress tracking",
+          "part4": "Nutritional guidance"
+        }
+      }
+    },
+    "course2": {
+      "name": "Online Training",
+      "description": {
+        "title": "Train anywhere with full online support",
+        "features": {
+          "part1": "Program adapted to your level",
+          "part2": "Video instructions and exercises",
+          "part3": "Flexible schedule",
+          "part4": "Continuous coach feedback"
+        }
+      }
+    },
+    "course3": {
+      "name": "Online Nutrition",
+      "description": {
+        "title": "Nutrition coaching for real results",
+        "features": {
+          "part1": "Personalized meal plans",
+          "part2": "Tasty and easy recipes",
+          "part3": "Balanced approach for energy and health",
+          "part4": "Progress tracking"
+        }
+      }
+    },
+    "button": "Get Started"
   }
 }
