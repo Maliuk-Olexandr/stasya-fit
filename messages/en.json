@@ -6,10 +6,31 @@
     "nutrition": "Nutrition",
     "consultation": "Book Free Consultation"
   },
-  "HomePage": {
-    "title": "Hello world!"
-  },
+ 
   "Hero": {
     "title": "Anastasiia Zhazhko"
+  },
+  "AboutMe": {
+    "title": "About Me",
+    "description": {
+      "part1": "Small steps every day lead to big changes",
+      "part2": "Every step, no matter how small, brings you closer to the person you want to become"
+    },
+
+    "title2": "Follow Me",
+    "button": "Instagram",
+
+    "title3": "My Story",
+    "description3": {
+      "part1": "My name is Anastasia Zhazhko. I am a fitness coach and gym trainer with many years of experience. Fitness is not only my job — it is an important part of my life. I am a prize-winner and champion in bodybuilding competitions, and this experience helps me understand how the body works and what it needs to grow.",
+      "part2": "The main focus of my training is improving health, strengthening the body, and increasing the quality of life. I teach people to train safely, effectively, and with enjoyment. I help build proper nutrition, create healthy habits, and most importantly — learn to love their bodies",
+      "part3": "My goal is to make sport not just a temporary hobby, but a source of strength, energy, and confidence every day"
+    },
+    "experience": {
+      "exp1": { "title": "Years of experience","description": "9" },
+      "exp2": { "title": "Awards", "description": "25" },
+      "exp3": { "title": "Clients", "description": "1245" },
+      "exp4": { "title": "Training hours", "description": "10567" }
+    }
   }
 }

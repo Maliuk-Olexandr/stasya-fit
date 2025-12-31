@@ -1,0 +1,1 @@
+import css from './CourseList.module.css';
