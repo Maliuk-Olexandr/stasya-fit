@@ -2,7 +2,9 @@ import { use } from "react";
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { routing } from "@/i18n/routing";
-import Hero from "@/modules/components/Hero/Hero";
+
+import HeroSection from "@/modules/components/11_Hero/Hero";
+import AboutMeSection from "@/modules/components/12_AboutMe/AboutMe";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -19,5 +21,10 @@ export default function HomePage({ params }: PageProps) {
 
   const t = useTranslations("HomePage");
 
-  return <Hero />;
+  return (
+    <>
+      <HeroSection />
+      <AboutMeSection />
+    </>
+  );
 }

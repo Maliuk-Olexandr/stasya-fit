@@ -4,7 +4,7 @@ import { useTranslations  } from 'next-intl';
 import { LanguageSwitcher } from '../ui/LanguageSwitcher/LanguageSwitcher';
 
 
-export default function Hero() {
+export default function HeroSection() {
   const t = useTranslations("Hero");
   return (
     <section className={clsx('section', css.section)}>
