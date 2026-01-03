@@ -7,7 +7,7 @@ import { LinkButton } from "../ui/LinkButton/LinkButton";
 import { useTranslations } from "next-intl";
 
 export function Header() {
-  const t = useTranslations("Header");
+  const t = useTranslations("header");
   return (
     <header>
       <div className={clsx("container", css.headerContainer)}>

@@ -1,5 +1,5 @@
 {
-  "Header": {
+  "header": {
     "home": "Home",
     "about": "About",
     "training": "Training",
@@ -7,72 +7,85 @@
     "consultation": "Book Free Consultation"
   },
 
-  "Hero": {
-    "title": "Anastasiia Zhazhko"
+  "social": {
+    "title": "Follow Me",
+    "links": [
+      { "id": "instagram", "label": "Instagram" },
+      { "id": "telegram", "label": "Telegram" },
+      { "id": "facebook", "label": "Facebook" }
+    ]
   },
 
-  "AboutMe": {
-    "title": "About Me",
-    "description": {
-      "part1": "Small steps every day lead to big changes",
-      "part2": "Every step, no matter how small, brings you closer to the person you want to become"
+  "hero": {
+    "title": "Anastasiia Zhazhko",
+    "subtitle": "Fitness coach & personal trainer"
+  },
+
+  "aboutMe": {
+    "intro": {
+      "title": "About Me",
+      "texts": [
+        "Small steps every day lead to big changes",
+        "Every step, no matter how small, brings you closer to the person you want to become"
+      ]
     },
 
-    "title2": "Follow Me",
-    "button": "Instagram",
-
-    "title3": "My Story",
-    "description3": {
-      "part1": "My name is Anastasia Zhazhko. I am a fitness coach and gym trainer with many years of experience. Fitness is not only my job — it is an important part of my life. I am a prize-winner and champion in bodybuilding competitions, and this experience helps me understand how the body works and what it needs to grow.",
-      "part2": "The main focus of my training is improving health, strengthening the body, and increasing the quality of life. I teach people to train safely, effectively, and with enjoyment. I help build proper nutrition, create healthy habits, and most importantly — learn to love their bodies",
-      "part3": "My goal is to make sport not just a temporary hobby, but a source of strength, energy, and confidence every day"
+    "story": {
+      "title": "My Story",
+      "paragraphs": [
+        "My name is Anastasia Zhazhko. I am a fitness coach and gym trainer with many years of experience. Fitness is not only my job — it is an important part of my life. I am a prize-winner and champion in bodybuilding competitions, and this experience helps me understand how the body works and what it needs to grow.",
+        "The main focus of my training is improving health, strengthening the body, and increasing the quality of life. I teach people to train safely, effectively, and with enjoyment. I help build proper nutrition, create healthy habits, and most importantly — learn to love their bodies.",
+        "My goal is to make sport not just a temporary hobby, but a source of strength, energy, and confidence every day."
+      ]
     },
+
     "experience": {
-      "exp1": { "title": "Years of experience", "description": "9" },
-      "exp2": { "title": "Awards", "description": "25" },
-      "exp3": { "title": "Clients", "description": "1245" },
-      "exp4": { "title": "Training hours", "description": "10567" }
+      "items": [
+        { "id": "years", "label": "Years of experience", "value": 9 },
+        { "id": "awards", "label": "Awards", "value": 25 },
+        { "id": "clients", "label": "Clients", "value": 1245 },
+        { "id": "hours", "label": "Training hours", "value": 10567 }
+      ]
     }
   },
-  
-  "Course List": {
+
+  "courseList": {
     "title": "Course List",
-    "course1": {
-      "name": "Personal Training",
-      "description": {
-        "title": "Individual workouts tailored to your goals",
-        "features": {
-          "part1": "Customized training plans",
-          "part2": "One-on-one coaching",
-          "part3": "Progress tracking",
-          "part4": "Nutritional guidance"
-        }
+    "courses": [
+      {
+        "id": "personal-training",
+        "title": "Personal Training",
+        "description": "Individual workouts tailored to your goals",
+        "features": [
+          "Customized training plans",
+          "One-on-one coaching",
+          "Progress tracking",
+          "Nutritional guidance"
+        ]
+      },
+      {
+        "id": "online-training",
+        "title": "Online Training",
+        "description": "Train anywhere with full online support",
+        "features": [
+          "Program adapted to your level",
+          "Video instructions and exercises",
+          "Flexible schedule",
+          "Continuous coach feedback"
+        ]
+      },
+      {
+        "id": "online-nutrition",
+        "title": "Online Nutrition",
+        "description": "Nutrition coaching for real results",
+        "features": [
+          "Personalized meal plans",
+          "Tasty and easy recipes",
+          "Balanced approach for energy and health",
+          "Progress tracking"
+        ]
       }
-    },
-    "course2": {
-      "name": "Online Training",
-      "description": {
-        "title": "Train anywhere with full online support",
-        "features": {
-          "part1": "Program adapted to your level",
-          "part2": "Video instructions and exercises",
-          "part3": "Flexible schedule",
-          "part4": "Continuous coach feedback"
-        }
-      }
-    },
-    "course3": {
-      "name": "Online Nutrition",
-      "description": {
-        "title": "Nutrition coaching for real results",
-        "features": {
-          "part1": "Personalized meal plans",
-          "part2": "Tasty and easy recipes",
-          "part3": "Balanced approach for energy and health",
-          "part4": "Progress tracking"
-        }
-      }
-    },
+    ],
     "button": "Get Started"
   }
 }

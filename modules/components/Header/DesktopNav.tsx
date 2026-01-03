@@ -8,7 +8,7 @@ import { isActiveLink } from "@/modules/utils/isActiveLink";
 import { usePathname } from "@/i18n/navigation";
 
 export function DesktopNav() {
-  const t = useTranslations("Header");
+  const t = useTranslations("header");
   const locale = useLocale();
   const pathname = usePathname();
 

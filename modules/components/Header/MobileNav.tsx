@@ -13,7 +13,7 @@ import { useLocale } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 
 export function MobileNav() {
-  const t = useTranslations("Header");
+  const t = useTranslations("header");
   const { isMobileMenuOpen, toggleMobileMenu, closeMobileMenu } =
     useNavigationStore();
   const locale = useLocale();
