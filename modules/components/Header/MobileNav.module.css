@@ -66,19 +66,19 @@
   transform: translateY(0);
 }
 .navLink {
-    display: inline-block;
-  }
+  display: inline-block;
+}
 
-  .navLink:hover,
-  .navLink:focus,
-  .navLink:active {
-    color: var(--th-text-accent-color);
-    transform: scale(1.05);
-  }
-  .active {
-    color: var(--th-text-color);
-    text-decoration: underline;
-  }
+.navLink:hover,
+.navLink:focus,
+.navLink:active {
+  color: var(--third-text-accent-color);
+  transform: scale(1.05);
+}
+.active {
+  color: var(--third-text-color);
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 768px) {
   .mobileNav {

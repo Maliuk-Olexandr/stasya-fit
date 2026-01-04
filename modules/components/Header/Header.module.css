@@ -44,11 +44,11 @@
   .navLink:hover,
   .navLink:focus,
   .navLink:active {
-    color: var(--th-text-accent-color);
+    color: var(--third-text-accent-color);
     transform: scale(1.05);
   }
   .active {
-    color: var(--th-text-color);
+    color: var(--third-text-color);
     text-decoration: underline;
   }
 }

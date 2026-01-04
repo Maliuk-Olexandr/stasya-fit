@@ -68,12 +68,11 @@ img {
 
   --background: #fffaf0;
   --foreground: #efdecd;
-  --rewivies-background: #ffeddc;
 
-  --main-text-color: #000000;
+  --main-text-color: #010101;
   --secondary-text-color: #fffcfc;
-  --th-text-color: #cd5700;
-  --th-text-accent-color: #b95000;
+  --third-text-color: #cd5700;
+  --third-text-accent-color: #b95000;
 }
 
 /* dark theme disabled until ready */
@@ -118,7 +117,7 @@ input::placeholder {
   min-width: 320px;
   max-width: 767px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 section {
   padding: 64px 0;

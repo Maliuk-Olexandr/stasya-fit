@@ -53,18 +53,18 @@
     "title": "Course List",
     "courses": [
       {
-        "id": "personal-training",
+        "id": "personalTraining",
         "title": "Personal Training",
         "description": "Individual workouts tailored to your goals",
         "features": [
-          "Customized training plans",
-          "One-on-one coaching",
-          "Progress tracking",
-          "Nutritional guidance"
+          "1-on-1 sessions with a coach",
+          "Personalized workout plan",
+          "Technique control and guidance",
+          "Motivation and support"
         ]
       },
       {
-        "id": "online-training",
+        "id": "onlineTraining",
         "title": "Online Training",
         "description": "Train anywhere with full online support",
         "features": [
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "id": "online-nutrition",
+        "id": "onlineNutrition",
         "title": "Online Nutrition",
         "description": "Nutrition coaching for real results",
         "features": [

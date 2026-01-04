@@ -64,11 +64,9 @@ export function MobileNav() {
               );
             })}
           </ul>
-          <LinkButton
-            className={css.mobileOnly}
-            label={t("consultation")}
-            href="/consultation"
-          />
+          <LinkButton className={css.mobileOnly} href="/consultation">
+            {t("consultation")}
+          </LinkButton>
         </nav>
       </div>
     </div>

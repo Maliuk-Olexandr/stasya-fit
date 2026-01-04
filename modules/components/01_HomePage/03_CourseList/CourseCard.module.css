@@ -1,0 +1,77 @@
+.courseCard {
+  border: 1px solid #3d2b1f;
+  border-radius: 4px;
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--background);
+  transition-duration: 250ms;
+  transition-property: background-color, color, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.courseTitle {
+  font-size: 3.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--display-oswald);
+}
+
+.courseDescription {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: disc;
+  padding-left: 44px;
+}
+
+.listItem {
+  line-height: 1.52;
+}
+.button {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-top: auto;
+  border: 1px solid var(--main-text-color);
+  min-width: 100%;
+}
+.svgIcon {
+  fill: var(--secondary-text-color);
+  transform: rotate(180deg);
+}
+.courseCard:hover,
+.courseCard:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--third-text-color);
+  transform: translateY(-56px);
+}
+.courseCard:hover .button,
+.courseCard:focus .button {
+  background-color: var(--foreground);
+  color: var(--main-text-color);
+  font-weight: 600;
+}
+.courseCard:hover .svgIcon,
+.courseCard:focus .svgIcon {
+  fill: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .courseCard{
+    padding: 24px ;
+  }
+  .button{
+    min-width: auto;
+  }
+}

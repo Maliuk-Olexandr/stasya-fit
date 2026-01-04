@@ -1,0 +1,18 @@
+.title{
+  font-weight: 700;
+  font-size:3rem;
+  text-transform: uppercase;
+  margin-bottom:64px;
+}
+.courseGrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .courseGrid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

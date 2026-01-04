@@ -8,7 +8,7 @@
 .link:hover,
 .link:focus {
   text-decoration: underline;
-  color: var(--th-text-color);
+  color: var(--third-text-color);
 }
 
 .active {
