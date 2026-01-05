@@ -1,0 +1,106 @@
+.aboutMeContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+  padding: 0;
+}
+
+/* First */
+
+.content1,
+.content2,
+.content3 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 16px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.content1 .title{
+  font-weight: 700;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.content1 .text:nth-of-type(1) {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.image1,
+.image2,
+.image3 {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image1 {
+  height: 332px;
+}
+
+/* Second */
+
+.content2 {
+  gap: 28px;
+}
+
+.linkButton {
+  width: 264px;
+  margin: 0 auto;
+}
+
+.image2 {
+  height: 352px;
+}
+
+/* Third */
+
+.content3 {
+  gap: 40px;
+}
+
+.image3 {
+  height: 550px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.storyList {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  font-size: 1.5rem;
+}
+
+/* Nums */
+
+.content4 {
+  background-color: var(--foreground);
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  text-align: center;
+  padding: 100px 68px;
+}
+
+.label {
+  line-height: 1.25;
+}
+
+.value {
+  font-family: var(--montserrat);
+  font-size: 3rem;
+  font-weight: 500;
+}
