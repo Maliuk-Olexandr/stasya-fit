@@ -13,7 +13,7 @@ export function Header() {
       <div className={clsx("container", css.headerContainer)}>
         <Logo />
         <DesktopNav />
-        <LinkButton className={css.desktopOnly} href="/consultation">
+        <LinkButton className={clsx(css.desktopOnly,css.link)} href="/consultation">
           {t("consultation")}
         </LinkButton>
         <MobileNav />

@@ -1,6 +1,6 @@
 "use client";
 import css from "./Header.module.css";
-import Link from "next/link";
+import {Link} from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import clsx from "clsx";
 import { mainNavLinks } from "@/modules/constants/navLink";

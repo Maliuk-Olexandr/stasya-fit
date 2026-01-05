@@ -1,3 +1,3 @@
-import en from "@/messages/en.json";
+import messages from "@/messages/en.json";
 
-export type Mess = typeof en;
+export type Messages = typeof messages;

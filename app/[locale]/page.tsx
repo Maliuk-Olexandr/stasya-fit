@@ -7,6 +7,8 @@ import AboutMeSection from "@/modules/components/01_HomePage/02_AboutMe/AboutMe"
 import RunningText from "@/modules/components/ui/RunningText/RunningText";
 import CourseList from "@/modules/components/01_HomePage/03_CourseList/CourseList";
 
+import JoinMe from "@/modules/components/01_HomePage/08-JoinMe/JoinMe";
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -26,6 +28,8 @@ export default function HomePage({ params }: PageProps) {
       <AboutMeSection />
       <RunningText />
       <CourseList />
+
+      <JoinMe />
     </>
   );
 }

@@ -87,5 +87,9 @@
       }
     ],
     "button": "Get Started"
+  },
+
+  "joinMe": {
+    "button": "Start Training Now"
   }
 }
