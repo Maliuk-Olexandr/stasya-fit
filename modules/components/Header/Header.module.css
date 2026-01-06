@@ -28,8 +28,9 @@
   .desktopOnly {
     display: flex;
   }
-  .link{
+  .link {
     max-width: 232px;
+    text-transform: uppercase;
   }
 
   /* Desktop navigation styles */
@@ -60,4 +61,3 @@
     gap: 64px;
   }
 }
-
