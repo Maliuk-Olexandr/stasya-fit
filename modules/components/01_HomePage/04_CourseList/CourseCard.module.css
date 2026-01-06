@@ -54,13 +54,19 @@
 .courseCard:focus {
   color: var(--secondary-text-color);
   background-color: var(--third-text-color);
-  transform: translateY(-56px);
+  transform: translateY(-28px);
 }
 .courseCard:hover .button,
 .courseCard:focus .button {
   background-color: var(--foreground);
   color: var(--main-text-color);
   font-weight: 600;
+}
+ .courseCard:hover .button:hover,
+ .courseCard:focus .button:focus {
+  /* transform: scale(1.1); */
+  background-color: var(--background);
+  transform: scale(1.05);
 }
 .courseCard:hover .svgIcon,
 .courseCard:focus .svgIcon {
@@ -73,5 +79,6 @@
   }
   .button {
     min-width: auto;
+    width: 273px;
   }
 }

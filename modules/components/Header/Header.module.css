@@ -31,6 +31,7 @@
   .link {
     max-width: 232px;
     text-transform: uppercase;
+    max-height: 58px;
   }
 
   /* Desktop navigation styles */
