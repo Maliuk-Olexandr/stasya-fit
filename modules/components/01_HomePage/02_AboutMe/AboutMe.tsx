@@ -2,21 +2,12 @@ import clsx from "clsx";
 import css from "./AboutMe.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { LinkButton } from "../../ui/LinkButton/LinkButton";
-
-type Props = { title: string; paragraphs: string[] };
-
-type ExperienceItem = {
-  id: string | number;
-  label: string;
-  value: string | number;
-};
+import { LinkButton } from "@/modules/components/ui/LinkButton/LinkButton";
 
 export default function AboutMeSection() {
   const t = useTranslations("aboutMe");
   const ht = useTranslations("social");
-  const experienceItems = t.raw("experience.items") as ExperienceItem[];
-  const story = t.raw("story") as Props;
+  const paragraphs = t.raw("story.paragraphs") as string[];
 
   return (
     <section id="about" className="section">
@@ -64,22 +55,13 @@ export default function AboutMeSection() {
               loading="lazy"
               className={css.image3}
             />
-  
+
             <ul className={css.storyList}>
-              {story.paragraphs.map((p, i) => (
-                <li key={i}>{p}</li>
+              {paragraphs.map((p, i) => (
+                <li className={css.listItem} key={i}>{p}</li>
               ))}
             </ul>
           </div>
-        </div>
-
-        <div className={css.content4}>
-          {experienceItems.map(({ id, label, value }) => (
-            <div key={id}>
-              <p className={css.label}>{label}</p>
-              <p className={css.value}>{value}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

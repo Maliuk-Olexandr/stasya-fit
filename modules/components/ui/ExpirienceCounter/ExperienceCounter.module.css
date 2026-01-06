@@ -1,0 +1,16 @@
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.label {
+  line-height: 1.25;
+}
+
+.value {
+  font-family: var(--montserrat);
+  font-size: 3rem;
+  font-weight: 500;
+}

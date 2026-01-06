@@ -1,0 +1,20 @@
+.experienceSection {
+  background-color: var(--foreground);
+  margin-bottom: 100px;
+}
+.experienceContainer {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .experienceSection{
+    padding: 128px 0;
+  }
+  .experienceContainer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+  }
+}

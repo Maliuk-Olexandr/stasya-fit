@@ -30,23 +30,23 @@
       ]
     },
 
-     "story": {
+    "story": {
       "title": "My Story",
       "paragraphs": [
         "My name is Anastasia Zhazhko. I am a fitness coach and gym trainer with many years of experience. Fitness is not only my job — it is an important part of my life. I am a prize-winner and champion in bodybuilding competitions, and this experience helps me understand how the body works and what it needs to grow.",
         "The main focus of my training is improving health, strengthening the body, and increasing the quality of life. I teach people to train safely, effectively, and with enjoyment. I help build proper nutrition, create healthy habits, and most importantly — learn to love their bodies.",
         "My goal is to make sport not just a temporary hobby, but a source of strength, energy, and confidence every day."
       ]
-    },
-
-    "experience": {
-      "items": [
-        { "id": "years", "label": "Years of experience", "value": 9 },
-        { "id": "awards", "label": "Awards", "value": 25 },
-        { "id": "clients", "label": "Clients", "value": 1245 },
-        { "id": "hours", "label": "Training hours", "value": 10567 }
-      ]
     }
+  },
+  
+  "experience": {
+    "items": [
+      { "id": "years", "label": "Years of experience", "value": 9 },
+      { "id": "awards", "label": "Awards", "value": 25 },
+      { "id": "clients", "label": "Clients", "value": 1245 },
+      { "id": "hours", "label": "Training hours", "value": 10567 }
+    ]
   },
 
   "courseList": {
