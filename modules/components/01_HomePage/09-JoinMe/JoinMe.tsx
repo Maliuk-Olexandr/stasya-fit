@@ -1,13 +1,11 @@
-import clsx from 'clsx';
-import css from './JoinMe.module.css';
-import { LinkButton } from '../../ui/LinkButton/LinkButton';
-import { useTranslations } from 'next-intl';
-
-
+import clsx from "clsx";
+import css from "./JoinMe.module.css";
+import { LinkButton } from "../../@ui/LinkButton/LinkButton";
+import { useTranslations } from "next-intl";
 
 export default function JoinMe() {
-  const t = useTranslations('header');
-  const tJoinMe = useTranslations('joinMe');
+  const t = useTranslations("header");
+  const tJoinMe = useTranslations("joinMe");
 
   return (
     <section className={clsx("section", css.joinMeSection)}>
@@ -15,9 +13,7 @@ export default function JoinMe() {
         <LinkButton href="/join" className={css.joinButton}>
           {tJoinMe("button")}
         </LinkButton>
-        <LinkButton href="/consultation">
-          {t("consultation")}
-        </LinkButton>
+        <LinkButton href="/consultation">{t("consultation")}</LinkButton>
       </div>
     </section>
   );

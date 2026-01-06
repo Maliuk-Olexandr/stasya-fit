@@ -2,8 +2,8 @@
 import css from "./experience.module.css";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { useInViewOnce } from "../../ui/ExpirienceCounter/useInViewOnce";
-import { ExperienceCounter } from "../../ui/ExpirienceCounter/ExperienceCounter";
+import { useInViewOnce } from "../../@ui/ExpirienceCounter/useInViewOnce";
+import { ExperienceCounter } from "../../@ui/ExpirienceCounter/ExperienceCounter";
 
 type ExperienceItem = {
   id: string;
@@ -12,13 +12,12 @@ type ExperienceItem = {
 };
 
 export default function ExperienceSection() {
-const t = useTranslations("experience");
-    const experienceItems = t.raw("items") as ExperienceItem[];
+  const t = useTranslations("experience");
+  const experienceItems = t.raw("items") as ExperienceItem[];
 
-
-   const { ref, inView } = useInViewOnce<HTMLDivElement>({
-      threshold: 0.1,
-    });
+  const { ref, inView } = useInViewOnce<HTMLDivElement>({
+    threshold: 0.1,
+  });
   return (
     <section id="experience" className={clsx("section", css.experienceSection)}>
       <div className={clsx("container", css.experienceContainer)} ref={ref}>

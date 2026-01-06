@@ -2,7 +2,7 @@ import clsx from "clsx";
 import css from "./AboutMe.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { LinkButton } from "@/modules/components/ui/LinkButton/LinkButton";
+import { LinkButton } from "@/modules/components/@ui/LinkButton/LinkButton";
 
 export default function AboutMeSection() {
   const t = useTranslations("aboutMe");
@@ -54,7 +54,9 @@ export default function AboutMeSection() {
             />
             <ul className={css.storyList}>
               {paragraphs.map((p, i) => (
-                <li className={css.listItem} key={i}>{p}</li>
+                <li className={css.listItem} key={i}>
+                  {p}
+                </li>
               ))}
             </ul>
           </div>

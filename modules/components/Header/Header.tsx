@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import css from "./Header.module.css";
-import { Logo } from "@/modules/components/ui/Logo/Logo";
+import { Logo } from "@/modules/components/@ui/Logo/Logo";
 import { DesktopNav } from "./DesktopNav";
 import { MobileNav } from "./MobileNav";
-import { LinkButton } from "../ui/LinkButton/LinkButton";
+import { LinkButton } from "../@ui/LinkButton/LinkButton";
 import { useTranslations } from "next-intl";
 
 export function Header() {
@@ -13,7 +13,10 @@ export function Header() {
       <div className={clsx("container", css.headerContainer)}>
         <Logo />
         <DesktopNav />
-        <LinkButton className={clsx(css.desktopOnly,css.link)} href="/consultation">
+        <LinkButton
+          className={clsx(css.desktopOnly, css.link)}
+          href="/consultation"
+        >
           {t("consultation")}
         </LinkButton>
         <MobileNav />

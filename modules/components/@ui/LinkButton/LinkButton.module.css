@@ -4,9 +4,9 @@
   text-align: center;
   background-color: var(--third-text-color);
   color: var(--secondary-text-color);
-  padding: 10px;
-  font-size: 1.25rem;
   border-radius: 2px;
+  padding: 10px 0;
+  font-size: 1.25rem;
   border: 1px solid var(--third-text-accent-color);
 }
 .link:hover,
@@ -14,8 +14,4 @@
   background-color: var(--third-text-accent-color);
 }
 
-@media screen and (min-width: 1440px) {
-  .link {
-    padding: 10px 28px;
-  }
-}
+

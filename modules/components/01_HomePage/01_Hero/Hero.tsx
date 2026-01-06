@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import css from "./Hero.module.css";
 import { useTranslations } from "next-intl";
-import { LanguageSwitcher } from "../../ui/LanguageSwitcher/LanguageSwitcher";
+import { LanguageSwitcher } from "../../@ui/LanguageSwitcher/LanguageSwitcher";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
