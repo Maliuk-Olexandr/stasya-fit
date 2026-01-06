@@ -51,6 +51,8 @@
 }
 
 .linkButton {
+  font-size: 2.25rem;
+  text-transform: capitalize;
   width: 264px;
   margin: 0 auto;
 }
