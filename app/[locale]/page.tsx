@@ -8,6 +8,7 @@ import RunningText from "@/modules/components/@ui/RunningText/RunningText";
 import CourseList from "@/modules/components/01_HomePage/04_CourseList/CourseList";
 import JoinMe from "@/modules/components/01_HomePage/09-JoinMe/JoinMe";
 import ExperienceSection from "@/modules/components/01_HomePage/03_experience/experience";
+import Reviews from "@/modules/components/01_HomePage/06-Reviews/Reviews";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -28,6 +29,8 @@ export default function HomePage({ params }: PageProps) {
       <ExperienceSection />
       <RunningText />
       <CourseList />
+
+      <Reviews />
 
       <JoinMe />
     </>

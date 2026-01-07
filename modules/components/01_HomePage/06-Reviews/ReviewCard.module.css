@@ -1,0 +1,52 @@
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 2px;
+  padding: 14px;
+  margin: 0 auto;
+}
+
+.img {
+  width: 279px;
+  margin: 0 auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewerName {
+  font-weight: 700;
+  font-size: 2.25rem;
+  font-style: italic;
+}
+
+.reviewComment {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 1440px) {
+  .reviewCard {
+    max-width: 656px;
+    gap: 24px;
+    padding: 24px;
+  }
+  .img {
+    width: 504px;
+    height: 504px;
+  }
+  .reviewerName {
+    font-size: 2.5rem;
+  }
+  .reviewComment {
+    font-size: 1.75rem;
+  }
+}

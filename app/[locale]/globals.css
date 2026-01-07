@@ -72,6 +72,7 @@ img {
   --secondary-text-color: #fffcfc;
   --third-text-color: #cd5700;
   --third-text-accent-color: #b95000;
+  --disabled-color: #a3a3a3;
 }
 
 /* dark theme disabled until ready */

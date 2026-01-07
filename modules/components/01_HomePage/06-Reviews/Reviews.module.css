@@ -1,0 +1,14 @@
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 64px;
+    margin-bottom: 80px;
+  }
+  
+}

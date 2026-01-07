@@ -1,0 +1,30 @@
+.nav{
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 40px;
+  }
+  .prevBtn,
+  .nextBtn {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--main-text-color);
+    border-radius: 50%;
+  }
+  .nextBtn {
+    transform: rotate(180deg);
+  }
+  .prevBtn:disabled,
+  .nextBtn:disabled {
+    fill:var(--disabled-color);
+    border-color: var(--disabled-color);
+    cursor: default;
+  }  
+}
