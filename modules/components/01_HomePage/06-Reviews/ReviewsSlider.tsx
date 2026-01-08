@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import type { Swiper as SwiperType } from "swiper/types";
 
+import clsx from "clsx";
 import { useRef, useState } from "react";
 import css from "./ReviewsSlider.module.css";
 import { reviewsData } from "./reviewsData";
@@ -48,20 +49,12 @@ export default function ReviewsSlider() {
 
       {/* Кастомні кнопки */}
       <div className={css.nav}>
-        <button
-          className={css.prevBtn}
-          ref={prevRef}
-          disabled={isBeginning}
-        >
+        <button className={clsx(css.prevBtn)} ref={prevRef} disabled={isBeginning}>
           <svg width="28" height="28">
             <use href="/icons.svg#arrow"></use>
           </svg>
         </button>
-        <button
-          className={css.nextBtn}
-          ref={nextRef}
-          disabled={isEnd}
-        >
+        <button className={css.nextBtn} ref={nextRef} disabled={isEnd}>
           <svg width="28" height="28">
             <use href="/icons.svg#arrow"></use>
           </svg>
