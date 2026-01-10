@@ -42,7 +42,7 @@ const notable = Notable({
 const oswald = Oswald({
   variable: "--display-oswald",
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["400", "700"],
   style: ["normal"],
 });
 
