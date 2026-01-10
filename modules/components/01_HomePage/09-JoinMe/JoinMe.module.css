@@ -1,0 +1,42 @@
+.joinMeSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+    image-set(url(/joinMeMob.webp) 1x, url(/joinMeMob@2x.webp) 2x);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 534px 0 150px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Button {
+  display: flex;
+  width: 264px;
+  min-height: 58px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 0 48px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+  .joinMeSection {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+    image-set(url(/joinMeDesk.webp) 1x, url(/joinMeDesk@2x.webp) 2x);
+    padding: 615px 0 150px;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .Button {
+    margin: 0;
+  }
+}
