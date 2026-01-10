@@ -10,10 +10,10 @@ export default function JoinMe() {
   return (
     <section className={clsx("section", css.joinMeSection)}>
       <div className={clsx("container", css.content)}>
-        <LinkButton href="/join" className={css.Button}>
+        <LinkButton href="/join" className={css.button}>
           {tJoinMe("button")}
         </LinkButton>
-        <LinkButton className={css.Button} href="/consultation">
+        <LinkButton className={css.button} href="/consultation">
           {t("consultation")}
         </LinkButton>
       </div>

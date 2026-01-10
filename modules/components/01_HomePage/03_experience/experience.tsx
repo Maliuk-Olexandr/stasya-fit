@@ -3,7 +3,7 @@ import css from "./experience.module.css";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import { useInViewOnce } from "../../@ui/ExpirienceCounter/useInViewOnce";
-import { ExperienceCounter } from "../../@ui/ExpirienceCounter/ExperienceCounter";
+import { ExperienceCounter } from "./ExperienceCounter";
 
 type ExperienceItem = {
   id: string;

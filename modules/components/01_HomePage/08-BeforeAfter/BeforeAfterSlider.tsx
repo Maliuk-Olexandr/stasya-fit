@@ -14,34 +14,31 @@ export default function BeforeAfterSlider() {
       modules={[Navigation, Autoplay]}
       spaceBetween={24}
       slidesPerView={1}
-      // navigation={{
-      //   prevEl: "." + css.prevBtn,
-      //   nextEl: "." + css.nextBtn,
-      // }}
-      // navigation={false}
-      // breakpoints={{
-      //   1440: {
-      //     navigation: {
-      //       prevEl: "." + css.prevBtn,
-      //       nextEl: "." + css.nextBtn,
-      //     },
-      //   },
-      // }}
-      navigation
-
-      // autoplay={{
-      //   delay: 5000,
-      //   disableOnInteraction: true,
-      //   pauseOnMouseEnter: true,
-      // }}
+      navigation={{
+        prevEl: "." + css.prevBtn,
+        nextEl: "." + css.nextBtn,
+      }}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+      }}
     >
       {beforeAfterData.map((item, index) => (
         <SwiperSlide key={index}>
           <BeforeAfterCard slide={item} />
         </SwiperSlide>
       ))}
-      {/* <button className={css.prevBtn}>Prev</button>
-      <button className={css.nextBtn}>Next</button> */}
+      <button className={css.prevBtn}>
+        <svg width="20" height="30">
+          <use href="/icons.svg#chevron"></use>
+        </svg>
+      </button>
+      <button className={css.nextBtn}>
+        <svg width="20" height="30">
+          <use href="/icons.svg#chevron"></use>
+        </svg>
+      </button>
     </Swiper>
   );
 }

@@ -1,6 +1,31 @@
-/* .nextEl{
-  display: block;
+.prevBtn,
+.nextBtn {
+  display: none;
 }
-.prevEl{
-  display: block;
-} */
+
+@media screen and (min-width: 1440px) {
+  .prevBtn svg,
+  .nextBtn svg {
+    width: 40px;
+    height: 40px;
+  }
+  .prevBtn,
+  .nextBtn {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .prevBtn {
+    left: 100px;
+    transform: rotate(180deg) translateY(50%);
+  }
+
+  .nextBtn {
+    right: 100px;
+    transform: translateY(-50%);
+  }
+}

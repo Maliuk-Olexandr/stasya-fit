@@ -14,7 +14,7 @@
   }
   .experienceContainer {
     flex-direction: row;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-evenly;
+    gap: 0;
   }
 }

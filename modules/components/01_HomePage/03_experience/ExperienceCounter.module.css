@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  width: 240px;
+  margin: 0 auto;
 }
 
 .label {

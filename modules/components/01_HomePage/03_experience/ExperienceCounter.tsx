@@ -1,6 +1,6 @@
 "use client";
 import css from "./ExperienceCounter.module.css";
-import { useCountUp } from "./useCountUp";
+import { useCountUp } from "../../@ui/ExpirienceCounter/useCountUp";
 
 type Props = {
   label: string;
