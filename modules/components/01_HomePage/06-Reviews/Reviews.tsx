@@ -1,5 +1,6 @@
 import css from './Reviews.module.css';
 import ReviewsSlider from "./ReviewsSlider";
+
 export default function Reviews() {
   return (
     <section className='section'>

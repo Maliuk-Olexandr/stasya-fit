@@ -1,16 +1,15 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import type { Swiper as SwiperType } from "swiper/types";
 
 import clsx from "clsx";
 import { useRef, useState } from "react";
 import css from "./ReviewsSlider.module.css";
-import { reviewsData } from "./reviewsData";
+import { reviewsData } from "./data";
 import ReviewCard from "./ReviewCard";
 
 export default function ReviewsSlider() {
@@ -23,7 +22,7 @@ export default function ReviewsSlider() {
 
   return (
     <Swiper
-      modules={[Navigation]}
+      modules={[Navigation, Autoplay]}
       spaceBetween={24}
       slidesPerView={1}
       onSwiper={(swiper) => {
@@ -40,6 +39,11 @@ export default function ReviewsSlider() {
         swiper.params.navigation.nextEl = nextRef.current;
       }}
       navigation
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+      }}
     >
       {reviewsData.map((review, index) => (
         <SwiperSlide key={index}>
@@ -49,7 +53,11 @@ export default function ReviewsSlider() {
 
       {/* Кастомні кнопки */}
       <div className={css.nav}>
-        <button className={clsx(css.prevBtn)} ref={prevRef} disabled={isBeginning}>
+        <button
+          className={clsx(css.prevBtn)}
+          ref={prevRef}
+          disabled={isBeginning}
+        >
           <svg width="28" height="28">
             <use href="/icons.svg#arrow"></use>
           </svg>

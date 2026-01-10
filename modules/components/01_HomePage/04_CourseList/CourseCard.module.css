@@ -73,7 +73,7 @@
   fill: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .courseCard {
     padding: 24px;
   }

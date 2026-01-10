@@ -14,6 +14,7 @@ export default function ReviewCard({
         alt="Reviewer photo"
         width={504}
         height={504}
+        loading="lazy"
       />
       <div className={css.reviewContent}>
         <h3 className={css.reviewerName}>{review.name}</h3>

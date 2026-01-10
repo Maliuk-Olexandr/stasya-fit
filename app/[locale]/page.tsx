@@ -9,6 +9,7 @@ import CourseList from "@/modules/components/01_HomePage/04_CourseList/CourseLis
 import JoinMe from "@/modules/components/01_HomePage/09-JoinMe/JoinMe";
 import ExperienceSection from "@/modules/components/01_HomePage/03_experience/experience";
 import Reviews from "@/modules/components/01_HomePage/06-Reviews/Reviews";
+import BeforeAfter from "@/modules/components/01_HomePage/08-BeforeAfter/BeforeAfter";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,6 +32,7 @@ export default function HomePage({ params }: PageProps) {
       <CourseList />
 
       <Reviews />
+      <BeforeAfter />
 
       <JoinMe />
     </>

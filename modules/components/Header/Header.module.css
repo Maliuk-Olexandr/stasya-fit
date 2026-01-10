@@ -21,7 +21,7 @@
   padding: 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .mobileOnly {
     display: none;
   }
@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 64px;
     font-size: 1.5rem;
   }
   .navLink {
@@ -55,10 +55,5 @@
   .active {
     color: var(--third-text-color);
     text-decoration: underline;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .desktopNav {
-    gap: 64px;
   }
 }

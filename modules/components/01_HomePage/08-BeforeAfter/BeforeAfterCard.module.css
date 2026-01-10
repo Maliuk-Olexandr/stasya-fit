@@ -1,0 +1,56 @@
+.beforeAfterCard{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.imagesContainer {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.image{
+  border-radius: 2px;
+  object-fit: cover;
+  /* width: 170px; */
+  height: 284px;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.imageLabel {
+  font-family: var(--font-family-secondary);
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.separator {
+  width: 2px;
+  height: 284px;
+  background-color: var(--main-text-color);
+}
+.description{
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+ 
+  .image{
+    /* width: 220px; */
+    height: 643px;
+  }
+  .separator {
+    height: 643px;
+  }
+  
+  
+}

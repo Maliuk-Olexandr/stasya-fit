@@ -116,7 +116,7 @@ input::placeholder {
 /* container */
 .container {
   min-width: 320px;
-  max-width: 767px;
+  max-width: 1439px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -124,12 +124,12 @@ section {
   padding: 64px 0;
 }
 /* Styles for Tablet */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
-}
+} */
 /* Styles for PC */
 @media only screen and (min-width: 1440px) {
   section {

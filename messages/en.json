@@ -91,5 +91,31 @@
 
   "joinMe": {
     "button": "Start Training Now"
+  },
+
+  "howItsWorks": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "id": "chooseProgram",
+        "title": "Choose a Program",
+        "description": "Select the training or nutrition program that fits your goals and lifestyle."
+      },
+      {
+        "id": "getPersonalizedPlan",
+        "title": "Get a Personalized Plan",
+        "description": "Receive a customized workout or meal plan tailored to your needs."
+      },
+      {
+        "id": "startTraining",
+        "title": "Start Training",
+        "description": "Begin your fitness journey with guided workouts and support."
+      },
+      {
+        "id": "trackProgress",
+        "title": "Track Your Progress",
+        "description": "Monitor your improvements and adjust your plan as needed."
+      }
+    ]
   }
 }
