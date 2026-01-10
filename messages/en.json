@@ -39,7 +39,7 @@
       ]
     }
   },
-  
+
   "experience": {
     "items": [
       { "id": "years", "label": "Years of experience", "value": 9 },
@@ -94,27 +94,22 @@
   },
 
   "howItsWorks": {
-    "title": "How It Works",
+    "title": "How to Get Started",
     "steps": [
       {
         "id": "chooseProgram",
-        "title": "Choose a Program",
-        "description": "Select the training or nutrition program that fits your goals and lifestyle."
-      },
-      {
-        "id": "getPersonalizedPlan",
-        "title": "Get a Personalized Plan",
-        "description": "Receive a customized workout or meal plan tailored to your needs."
+        "title": "Choose Your Program",
+        "description": "Pick the course that fits your goals — personal training, online training, or nutrition"
       },
       {
         "id": "startTraining",
-        "title": "Start Training",
-        "description": "Begin your fitness journey with guided workouts and support."
+        "title": "Start Your Training",
+        "description": "Get your personalized plan and begin working with your coach"
       },
       {
         "id": "trackProgress",
-        "title": "Track Your Progress",
-        "description": "Monitor your improvements and adjust your plan as needed."
+        "title": "See the Results",
+        "description": "Stay consistent and achieve the body and health you’ve always wanted"
       }
     ]
   }

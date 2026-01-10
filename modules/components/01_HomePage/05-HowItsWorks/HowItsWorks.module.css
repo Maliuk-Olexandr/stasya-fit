@@ -1,0 +1,84 @@
+.howItsWorks {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/HowItsWorksMob.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--background);
+}
+
+.title {
+  font-family: var(--display-oswald);
+  font-size: 4rem;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  
+}
+
+.stepNum {
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.stepTitle {
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.stepDescription {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .howItsWorks {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(/HowItsWorksDesk.webp);
+  }
+
+  .title {
+    font-size: 6rem;
+    margin-bottom: 16px;
+    max-width: 444px;
+  }
+
+  .steps {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .step {
+    gap: 36px;
+    max-width: 284px;
+  }
+
+  .step:first-child {
+    max-width: 314px;
+  }
+
+  .stepNum {
+    font-size: 8rem;
+  }
+
+  .stepTitle {
+    font-size: 2.5rem;
+  }
+
+  .stepDescription {
+    font-size: 1.5rem;
+  }
+}
