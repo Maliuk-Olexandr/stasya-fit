@@ -89,11 +89,6 @@
     "button": "Начать"
   },
 
-  "joinMe": {
-    "title": "Присоединяйтесь ко мне сегодня",
-    "button": "Начать тренироваться"
-  },
-
   "howItsWorks": {
     "title": "Как начать",
     "steps": [
@@ -113,5 +108,51 @@
         "description": "Будьте последовательны и достигайте тела и здоровья, которых вы всегда хотели"
       }
     ]
+  },
+
+  "reviews": {
+    "title": "Отзывы"
+  },
+
+  "beforeAfter": {
+    "title": "Трансформации",
+    "before": "До",
+    "after": "После",
+    "items": [
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation1"
+      },
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation2"
+      },
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation3"
+      },
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation4"
+      }
+    ],
+
+    "transformation1": "Похудела на 9 кг за 3 месяца с персональными тренировками.",
+    "transformation2": "Преобразила тело и улучшила силу всего за 12 недель.",
+    "transformation3": "Добилась подтянутой фигуры благодаря регулярным тренировкам.",
+    "transformation4": "Увеличила мышечную массу и улучшила общую физическую форму."
+  },
+
+  "joinMe": {
+    "title": "Присоединяйтесь ко мне сегодня",
+    "button": "Начать тренироваться"
   }
 }

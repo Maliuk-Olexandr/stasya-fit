@@ -56,6 +56,9 @@
   .separator {
     height: 643px;
   }
+  .imageWrapper{
+    gap: 24px;
+  }
 .imageLabel {
   font-size: 2rem;
   }

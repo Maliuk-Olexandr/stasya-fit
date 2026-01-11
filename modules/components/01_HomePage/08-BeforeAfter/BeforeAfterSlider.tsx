@@ -4,11 +4,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+
 import css from "./BeforeAfterSlider.module.css";
-import { beforeAfterData } from "./data";
 import BeforeAfterCard from "./BeforeAfterCard";
+import messages from "@/messages/en.json";
+import { useTranslations } from "next-intl";
 
 export default function BeforeAfterSlider() {
+  const { beforeAfter } = messages;
+  const { items } = beforeAfter;
+  const t = useTranslations("beforeAfter");
+
   return (
     <Swiper
       modules={[Navigation, Autoplay, Pagination]}
@@ -28,7 +34,7 @@ export default function BeforeAfterSlider() {
         clickable: true,
         el: "." + css.pagination,
         renderBullet: (index, className) => {
-          const img = beforeAfterData[index].thumpnail;
+          const img = items[index].thumbnail;
           return `
         <span class="${className} ${css.thumb}">
           <img src="${img}" alt="Before photo ${index + 1}" />
@@ -37,9 +43,13 @@ export default function BeforeAfterSlider() {
         },
       }}
     >
-      {beforeAfterData.map((item, index) => (
+      {items.map((item, index) => (
         <SwiperSlide key={index}>
-          <BeforeAfterCard slide={item} />
+          <BeforeAfterCard
+            beforePhoto={item.beforePhoto}
+            afterPhoto={item.afterPhoto}
+            description={t(item.description)}
+          />
         </SwiperSlide>
       ))}
       <button className={css.prevBtn}>

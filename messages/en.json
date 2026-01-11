@@ -89,11 +89,6 @@
     "button": "Get Started"
   },
 
-  "joinMe": {
-    "title": "Join Me Today",
-    "button": "Start Training"
-  },
-
   "howItsWorks": {
     "title": "How to Get Started",
     "steps": [
@@ -113,5 +108,50 @@
         "description": "Stay consistent and achieve the body and health you’ve always wanted"
       }
     ]
+  },
+
+  "reviews": {
+    "title": "What My Clients Say"
+  },
+
+  "beforeAfter": {
+    "title": "Transformations",
+    "before": "Before",
+    "after": "After",
+    "items": [
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation1"
+      },
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation2"
+      },
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation3"
+      },
+      {
+        "beforePhoto": "/before1.webp",
+        "afterPhoto": "/after1.webp",
+        "thumbnail": "/thumb1.webp",
+        "description": "transformation4"
+      }
+    ],
+    "transformation1": "Lost 9 kg in 3 months with personal training.",
+    "transformation2": "Transformed body and improved strength in just 12 weeks.",
+    "transformation3": "Achieved a toned figure through regular workouts.",
+    "transformation4": "Boosted energy and confidence with a healthy lifestyle."
+  },
+
+  "joinMe": {
+    "title": "Join Me Today",
+    "button": "Start Training"
   }
 }

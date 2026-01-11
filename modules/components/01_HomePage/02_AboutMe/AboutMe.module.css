@@ -108,6 +108,7 @@
   }
   .story {
     flex-direction: row;
+    align-items: center;
   }
 
   .content3 {
