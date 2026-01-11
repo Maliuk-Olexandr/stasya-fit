@@ -16,6 +16,10 @@
     ]
   },
 
+  "runingText": {
+    "texts": ["Online", "Training", "Fitness", "Nutrition"]
+  },
+
   "hero": {
     "title": "Anastasiia Zhazhko",
     "subtitle": "Fitness coach & personal trainer"
