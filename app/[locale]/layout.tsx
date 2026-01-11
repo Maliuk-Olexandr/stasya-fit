@@ -11,8 +11,9 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Header } from "@/modules/components/Header/Header";
+import Header from "@/modules/components/Header/Header";
 import { setRequestLocale } from "next-intl/server";
+import Footer from "@/modules/components/Footer/Footer";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--cormorant-garamond",
@@ -116,6 +117,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider>
           <Header />
           <main>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -10,7 +10,7 @@ type Course = {
   features: string[];
 };
 
-export default function CourseList() {
+export default function CourseListSection() {
   const t = useTranslations("courseList");
   const courses = t.raw("courses") as Course[];
 

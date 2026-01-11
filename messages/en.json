@@ -138,6 +138,32 @@
     ]
   },
 
+  "faq": {
+    "title": "F&Q",
+    "items": [
+      {
+        "question": "What if I’m a beginner?",
+        "answer": "No worries! All programs are adapted to your current level — whether you’re just starting or already experienced."
+      },
+      {
+        "question": "Can I combine training and nutrition programs?",
+        "answer": "Absolutely! Combining both can lead to even better results and a more holistic approach to your health and fitness."
+      },
+      {
+        "question": "How is the nutrition plan created?",
+        "answer": "The nutrition plan is personalized based on your goals, preferences, and any dietary restrictions you may have."
+      },
+      {
+        "question": "Do I need any equipment for online training?",
+        "answer": "Most exercises can be done with minimal equipment, but having basic items like dumbbells or resistance bands can enhance your workouts."
+      },
+      {
+        "question": "How soon will I see results?",
+        "answer": "Results vary depending on individual effort and consistency, but many clients start noticing changes within a few weeks."
+      }
+    ]
+  },
+
   "beforeAfter": {
     "title": "Transformations",
     "before": "Before",

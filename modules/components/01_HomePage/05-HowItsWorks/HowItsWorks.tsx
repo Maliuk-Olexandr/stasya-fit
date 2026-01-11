@@ -8,7 +8,7 @@ type Step = {
   description: string;
 };
 
-export default function HowItsWorks() {
+export default function HowItsWorksSection() {
   const t = useTranslations("howItsWorks");
   const steps = t.raw("steps") as Step[];
 

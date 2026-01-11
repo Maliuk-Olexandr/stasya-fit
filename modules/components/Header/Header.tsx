@@ -6,7 +6,7 @@ import { MobileNav } from "./MobileNav";
 import { LinkButton } from "../@ui/LinkButton/LinkButton";
 import { useTranslations } from "next-intl";
 
-export function Header() {
+export default function Header() {
   const t = useTranslations("header");
   return (
     <header>

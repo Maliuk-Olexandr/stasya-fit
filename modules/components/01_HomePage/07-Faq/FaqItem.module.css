@@ -1,0 +1,59 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-top: 1px solid var(--main-text-color);
+
+  overflow: hidden;
+}
+.item:last-child {
+  border-bottom: 1px solid var(--main-text-color);
+}
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 16px 0;
+  cursor: pointer;
+}
+.counter{
+  font-family: var(--reddit-mono);
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+.questionWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.question {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.icon {
+  min-width: 28px;
+  transition: transform 0.3s ease;
+  transform: rotate(-45deg);
+}
+.icon.open {
+  transform: rotate(135deg);
+}
+
+.answerWrapper {
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.answer {
+  padding: 0 0 16px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
