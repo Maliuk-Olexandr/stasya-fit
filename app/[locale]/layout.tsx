@@ -115,7 +115,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       >
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main>{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>

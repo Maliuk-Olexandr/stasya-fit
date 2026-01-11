@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -14,7 +13,7 @@
 .image{
   border-radius: 2px;
   object-fit: cover;
-  /* width: 170px; */
+  overflow: hidden;
   height: 284px;
 }
 
@@ -42,15 +41,26 @@
   font-size: 1.5rem;
   text-align: center;
 }
+
 @media screen and (min-width: 1440px) {
+  .beforeAfterCard{
+    gap: 40px;
+  }
+  .imagesContainer {
+    gap: 24px;
+  }
  
   .image{
-    /* width: 220px; */
     height: 643px;
   }
   .separator {
     height: 643px;
   }
+.imageLabel {
+  font-size: 2rem;
+  }
   
-  
+  .description{
+    font-size: 2rem;
+  }
 }

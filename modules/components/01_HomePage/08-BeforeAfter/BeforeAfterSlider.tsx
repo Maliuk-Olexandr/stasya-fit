@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import css from "./BeforeAfterSlider.module.css";
@@ -11,9 +11,10 @@ import BeforeAfterCard from "./BeforeAfterCard";
 export default function BeforeAfterSlider() {
   return (
     <Swiper
-      modules={[Navigation, Autoplay]}
+      modules={[Navigation, Autoplay, Pagination]}
       spaceBetween={24}
       slidesPerView={1}
+      loop
       navigation={{
         prevEl: "." + css.prevBtn,
         nextEl: "." + css.nextBtn,
@@ -22,6 +23,18 @@ export default function BeforeAfterSlider() {
         delay: 5000,
         disableOnInteraction: true,
         pauseOnMouseEnter: true,
+      }}
+      pagination={{
+        clickable: true,
+        el: "." + css.pagination,
+        renderBullet: (index, className) => {
+          const img = beforeAfterData[index].thumpnail;
+          return `
+        <span class="${className} ${css.thumb}">
+          <img src="${img}" alt="Before photo ${index + 1}" />
+        </span>
+      `;
+        },
       }}
     >
       {beforeAfterData.map((item, index) => (
@@ -39,6 +52,7 @@ export default function BeforeAfterSlider() {
           <use href="/icons.svg#chevron"></use>
         </svg>
       </button>
+      <div className={css.pagination} />
     </Swiper>
   );
 }
