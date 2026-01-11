@@ -10,7 +10,7 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: marquee 400s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
 .track span {
