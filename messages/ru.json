@@ -111,7 +111,27 @@
   },
 
   "reviews": {
-    "title": "Отзывы"
+    "title": "Отзывы",
+    "items": [
+      {
+        "name": "Мария Иванова",
+        "photo": "/review2.webp",
+        "rating": 5,
+        "comment": "Я начала с онлайн-тренировок, и это полностью изменило мой подход к фитнесу!"
+      },
+      {
+        "name": "Даниил Курбатов",
+        "photo": "/review.webp",
+        "rating": 4,
+        "comment": "Персональные тренировки помогли мне превзойти свои пределы — и в хорошем смысле!"
+      },
+      {
+        "name": "София Волочкова",
+        "photo": "/AboutMe2.webp",
+        "rating": 5,
+        "comment": "Превзошла все мои ожидания! Команда была профессиональной и внимательной."
+      }
+    ]
   },
 
   "beforeAfter": {
@@ -123,32 +143,27 @@
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation1"
+        "description": "Похудела на 9 кг за 3 месяца с персональными тренировками."
       },
       {
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation2"
+        "description": "Преобразила тело и улучшила силу всего за 12 недель."
       },
       {
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation3"
+        "description": "Добилась подтянутой фигуры благодаря регулярным тренировкам."
       },
       {
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation4"
+        "description": "Увеличила мышечную массу и улучшила общую физическую форму."
       }
-    ],
-
-    "transformation1": "Похудела на 9 кг за 3 месяца с персональными тренировками.",
-    "transformation2": "Преобразила тело и улучшила силу всего за 12 недель.",
-    "transformation3": "Добилась подтянутой фигуры благодаря регулярным тренировкам.",
-    "transformation4": "Увеличила мышечную массу и улучшила общую физическую форму."
+    ]
   },
 
   "joinMe": {

@@ -9,8 +9,15 @@ import type { Swiper as SwiperType } from "swiper/types";
 import clsx from "clsx";
 import { useRef, useState } from "react";
 import css from "./ReviewsSlider.module.css";
-import { reviewsData } from "./data";
 import ReviewCard from "./ReviewCard";
+import { useTranslations } from "next-intl";
+
+type Review = {
+  name: string;
+  photo: string;
+  rating: number;
+  comment: string;
+};
 
 export default function ReviewsSlider() {
   const prevRef = useRef<HTMLButtonElement | null>(null);
@@ -19,6 +26,9 @@ export default function ReviewsSlider() {
 
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
+
+  const t = useTranslations("reviews");
+  const reviewsData = t.raw("items") as Review[];
 
   return (
     <Swiper

@@ -111,7 +111,27 @@
   },
 
   "reviews": {
-    "title": "What My Clients Say"
+    "title": "What My Clients Say",
+    "items": [
+      {
+        "name": "Emma Roberts",
+        "photo": "/review2.webp",
+        "rating": 5,
+        "comment": "I started with online training, and it completely changed my approach to fitness!"
+      },
+      {
+        "name": "Daniel Lewis",
+        "photo": "/review.webp",
+        "rating": 4,
+        "comment": "Personal training sessions pushed me beyond my limits — in a good way!"
+      },
+      {
+        "name": "Sophie Lee",
+        "photo": "/AboutMe2.webp",
+        "rating": 5,
+        "comment": "Exceeded my expectations! The team was professional and attentive."
+      }
+    ]
   },
 
   "beforeAfter": {
@@ -123,31 +143,27 @@
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation1"
+        "description": "Lost 9 kg in 3 months with personal training."
       },
       {
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation2"
+        "description": "Transformed body and improved strength in just 12 weeks."
       },
       {
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation3"
+        "description": "Achieved a toned figure through regular workouts."
       },
       {
         "beforePhoto": "/before1.webp",
         "afterPhoto": "/after1.webp",
         "thumbnail": "/thumb1.webp",
-        "description": "transformation4"
+        "description": "Boosted energy and confidence with a healthy lifestyle."
       }
-    ],
-    "transformation1": "Lost 9 kg in 3 months with personal training.",
-    "transformation2": "Transformed body and improved strength in just 12 weeks.",
-    "transformation3": "Achieved a toned figure through regular workouts.",
-    "transformation4": "Boosted energy and confidence with a healthy lifestyle."
+    ]
   },
 
   "joinMe": {
