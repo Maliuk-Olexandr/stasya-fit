@@ -107,7 +107,6 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   // Enable static rendering
   setRequestLocale(locale);
-  console.log("LocaleLayout locale:", locale);
 
   return (
     <html lang={locale} data-scroll-behavior="smooth">
