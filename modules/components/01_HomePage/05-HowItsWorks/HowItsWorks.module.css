@@ -48,6 +48,8 @@
   .howItsWorks {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(/HowItsWorksDesk.webp);
+      max-width: 1440px;
+      margin: 0 auto;
   }
 
   .title {
