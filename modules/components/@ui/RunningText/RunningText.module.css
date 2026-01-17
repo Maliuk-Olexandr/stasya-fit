@@ -1,16 +1,15 @@
 .marquee {
-  display: flex;
-  gap: 20px;
   overflow: hidden;
   width: 100%;
   background-color: var(--third-text-color);
-  padding: 10px 0;}
+  padding: 10px 0;
+}
 
 .track {
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: marquee 50s linear infinite;
+  will-change: transform;
 }
 
 .track span {
@@ -21,20 +20,11 @@
   text-transform: uppercase;
 }
 
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee:hover .track {
-  animation-play-state: paused;
-}
-
 @media screen and (min-width: 1440px) {
   .track {
     gap: 40px;
   }
+
   .track span {
     font-size: 3rem;
   }

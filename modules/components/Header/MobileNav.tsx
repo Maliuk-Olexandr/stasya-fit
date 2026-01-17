@@ -34,7 +34,7 @@ export function MobileNav() {
       <div
         className={clsx(css.backdrop, isMobileMenuOpen && css.mobileMenuOpen)}
       >
-        <nav className={css.mobileMenu}>
+        <nav className={css.mobileMenu} aria-label="Mobile menu navigation">
           <LanguageSwitcher />
           <ul className={css.mobileMenuList}>
             {mainNavLinks.map((link) => {
@@ -64,7 +64,7 @@ export function MobileNav() {
               );
             })}
           </ul>
-          <LinkButton className={css.mobileOnly} href="/consultation">
+          <LinkButton className={css.mobileOnly} href="/consultation" aria-label="Consultation">
             {t("consultation")}
           </LinkButton>
         </nav>

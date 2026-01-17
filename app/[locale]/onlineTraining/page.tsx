@@ -3,8 +3,8 @@ import TrainingMenu from "@/modules/components/02_TrainingPage/02_TrainingMenu/T
 import RunningText from "@/modules/components/@ui/RunningText/RunningText";
 
 
-export default function nutritionPage() {
-  return (
+export default function onlineTrainingPage() {
+  return (  
     <>
       <HeroSection />
       <TrainingMenu />
