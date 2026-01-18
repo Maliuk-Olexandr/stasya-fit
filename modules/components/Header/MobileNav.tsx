@@ -64,7 +64,7 @@ export function MobileNav() {
               );
             })}
           </ul>
-          <LinkButton className={css.mobileOnly} href="/consultation" aria-label="Consultation">
+          <LinkButton className={css.link} href="/consultation" aria-label="Consultation">
             {t("consultation")}
           </LinkButton>
         </nav>
