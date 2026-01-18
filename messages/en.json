@@ -7,12 +7,12 @@
     "consultation": "Book Free Consultation"
   },
 
-  "social": {
+  "socials": {
     "title": "Follow Me",
     "links": [
-      { "id": "instagram", "label": "Instagram" },
-      { "id": "telegram", "label": "Telegram" },
-      { "id": "facebook", "label": "Facebook" }
+      { "id": "instagram", "label": "Instagram", "url":"https://www.instagram.com/" },
+      { "id": "telegram", "label": "Telegram", "url":"https://t.me/" },
+      { "id": "facebook", "label": "Facebook", "url":"https://www.facebook.com/" }
     ]
   },
 
@@ -201,6 +201,14 @@
     "button": "Start Training"
   },
 
+
+  "footer": {
+    "title": ["Contact", "Me"],
+    "description": "Follow me on Instagram for daily motivation and updates",
+    "copyright": "© 2024 Stasya Fit. All rights reserved.",
+    "Made": "Made by Textterrion Tech"
+  },
+  
   "trainingMenu": {
     "personalTraining": "Personal Training",
     "onlineTraining": "Online Training",
@@ -220,5 +228,6 @@
   "nutritionPlans": {
     "title": "Nutrition Plans",
     "description": "Get an easy meal plan made for your goals and lifestyle. I help you understand what and how much to eat, so you can feel better, have more energy, and see real results. Simple, healthy, and clear — without stress or strict diets" 
+
   }
 }
