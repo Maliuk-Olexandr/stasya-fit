@@ -10,9 +10,9 @@
   "socials": {
     "title": "Follow Me",
     "links": [
-      { "id": "instagram", "label": "Instagram", "url":"https://www.instagram.com/" },
-      { "id": "telegram", "label": "Telegram", "url":"https://t.me/" },
-      { "id": "facebook", "label": "Facebook", "url":"https://www.facebook.com/" }
+      {"id": "instagram", "label": "Instagram", "url": "https://www.instagram.com/"},
+      {"id": "telegram", "label": "Telegram", "url": "https://t.me/"},
+      {"id": "facebook", "label": "Facebook", "url": "https://www.facebook.com/"}
     ]
   },
 
@@ -201,14 +201,13 @@
     "button": "Start Training"
   },
 
-
   "footer": {
     "title": ["Contact", "Me"],
     "description": "Follow me on Instagram for daily motivation and updates",
     "copyright": "© 2024 Stasya Fit. All rights reserved.",
     "Made": "Made by Textterrion Tech"
   },
-  
+
   "trainingMenu": {
     "personalTraining": "Personal Training",
     "onlineTraining": "Online Training",
@@ -220,6 +219,24 @@
     "description": "Get a fully personalised workout plan, clear guidance, and full support during every session. I help you train safely, build strength, improve your form, and reach your goals faster — with a program created just for your body and lifestyle."
   },
 
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "id": "Group Training",
+        "img": "/group-training.webp",
+        "title": "Group Training",
+        "description": "Work out in a positive group atmosphere. Support, teamwork, and fun — everything you need to stay consistent"
+      },
+      {
+        "id": "Personal Training",
+        "img": "/personal-training.webp",
+        "title": "Personal Training",
+        "description": "A personalised plan, full control of technique, and guidance made just for you"
+      }
+    ]
+  },
+
   "onlineTraining": {
     "title": "Online Training",
     "description": "Train anywhere and anytime. You get a simple plan, clear guidance, and support from me online. You can work out at home, in the gym, or even while traveling — and still stay on track with your goals"
@@ -227,7 +244,6 @@
 
   "nutritionPlans": {
     "title": "Nutrition Plans",
-    "description": "Get an easy meal plan made for your goals and lifestyle. I help you understand what and how much to eat, so you can feel better, have more energy, and see real results. Simple, healthy, and clear — without stress or strict diets" 
-
+    "description": "Get an easy meal plan made for your goals and lifestyle. I help you understand what and how much to eat, so you can feel better, have more energy, and see real results. Simple, healthy, and clear — without stress or strict diets"
   }
 }
