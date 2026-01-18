@@ -13,7 +13,7 @@ export function DesktopNav() {
   const pathname = usePathname();
 
   return (
-    <nav>
+    <nav aria-label="Main navigation">
       <ul className={css.desktopNav}>
         {mainNavLinks.map((link) => {
           const isActive = link.hash
@@ -25,8 +25,8 @@ export function DesktopNav() {
             : {
                 pathname: link.href,
                 hash: link.hash,
-            };
-        
+              };
+
           return (
             <li key={link.labelKey}>
               <Link

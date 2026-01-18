@@ -15,3 +15,16 @@ export const mainNavLinks: mainNavLinksType[] = [
   { href: "/nutrition", labelKey: "nutrition" },
 ];
 
+
+type trainingMenuLinkKey = keyof Messages["trainingMenu"];
+
+export type trainingMenuLinksType = {
+  href: string;
+  labelKey: trainingMenuLinkKey;
+};
+
+export const trainingMenuLinks: trainingMenuLinksType[] = [
+  { href: "/personalTraining", labelKey: "personalTraining" },
+  { href: "/onlineTraining", labelKey: "onlineTraining" },
+  { href: "/nutrition", labelKey: "onlineNutrition" },
+];

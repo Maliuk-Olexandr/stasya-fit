@@ -28,7 +28,7 @@ export default function FaqSection() {
       <div className="container">
       <h2 className={css.title}>{t("title")}</h2>
 
-      <ul className={css.list}>
+      <ul>
         {items.map((item, index) => (
           <FaqItemRow
             key={index}

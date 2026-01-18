@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.title {
+  font-family: var(--display-oswald);
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.description{
+  font-weight: 600;
+}
+
+@media screen  and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 88px;
+    padding: 0 100px;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  
+}
