@@ -7,12 +7,12 @@
     "consultation": "Book Free Consultation"
   },
 
-  "social": {
+  "socials": {
     "title": "Follow Me",
     "links": [
-      { "id": "instagram", "label": "Instagram" },
-      { "id": "telegram", "label": "Telegram" },
-      { "id": "facebook", "label": "Facebook" }
+      { "id": "instagram", "label": "Instagram", "url":"https://www.instagram.com/" },
+      { "id": "telegram", "label": "Telegram", "url":"https://t.me/" },
+      { "id": "facebook", "label": "Facebook", "url":"https://www.facebook.com/" }
     ]
   },
 
@@ -199,5 +199,12 @@
   "joinMe": {
     "title": "Join Me Today",
     "button": "Start Training"
+  },
+
+  "footer": {
+    "title": ["Contact", "Me"],
+    "description": "Follow me on Instagram for daily motivation and updates",
+    "copyright": "© 2024 Stasya Fit. All rights reserved.",
+    "Made": "Made by Textterrion Tech"
   }
 }

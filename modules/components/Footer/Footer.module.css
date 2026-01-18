@@ -1,0 +1,112 @@
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.infoItemTitle {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.socialsList {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  display: grid;
+  fill: var(--third-text-color);
+}
+
+.link:hover,
+.link:focus {
+  fill: var(--third-text-accent-color);
+}
+
+.title {
+  font-family: var(--display-oswald);
+  color: var(--third-text-color);
+  font-weight: 700;
+  font-size: 5.25rem;
+  text-transform: uppercase;
+}
+
+.titleSpan {
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.linkButton {
+  min-width: 284px;
+  font-size: 2rem;
+}
+
+.copyright,
+.madeBy {
+  font-size: 1rem;
+  color: var(--disabled-color);
+  text-align: center;
+}
+
+.copyright {
+  margin-top: 28px;
+}
+
+.madeBy {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footerContent {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contactInfo {
+    gap: 56px;
+  }
+
+  .contactDetails {
+    gap: 68px;
+    max-width: 616px;
+  }
+
+  .title {
+    font-size: 7.5rem;
+  }
+
+  .description {
+    font-size: 2rem;
+  }
+
+  .linkButton {
+    font-size: 2.5rem;
+    max-width: 272px;
+  }
+}

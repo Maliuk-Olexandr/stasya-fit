@@ -7,12 +7,12 @@
     "consultation": "Получить консультацию"
   },
 
-  "social": {
+  "socials": {
     "title": "ПОДПИСЫВАЙСЯ НА МЕНЯ",
     "links": [
-      { "id": "instagram", "label": "Instagram" },
-      { "id": "telegram", "label": "Telegram" },
-      { "id": "facebook", "label": "Facebook" }
+      {"id": "instagram", "label": "Instagram","url": "https://www.instagram.com/"},
+      { "id": "telegram", "label": "Telegram", "url": "https://t.me/" },
+      {"id": "facebook","label": "Facebook", "url": "https://www.facebook.com/"}
     ]
   },
 
@@ -199,5 +199,11 @@
   "joinMe": {
     "title": "Присоединяйтесь ко мне сегодня",
     "button": "Начать тренироваться"
+  },
+
+  "footer": {
+    "title": ["Связаться", "со мной"],
+    "copyright": "© 2026 Stasya Fit. Всі права захищені.",
+    "Made": "Зроблено Textterrion Tech"
   }
 }

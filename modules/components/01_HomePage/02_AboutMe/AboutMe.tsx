@@ -6,7 +6,7 @@ import { LinkButton } from "@/modules/components/@ui/LinkButton/LinkButton";
 
 export default function AboutMeSection() {
   const t = useTranslations("aboutMe");
-  const ht = useTranslations("social");
+  const ht = useTranslations("socials");
   const paragraphs = t.raw("story.paragraphs") as string[];
 
   return (
