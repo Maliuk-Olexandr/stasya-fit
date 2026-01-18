@@ -10,9 +10,17 @@
   "socials": {
     "title": "ПОДПИСЫВАЙСЯ НА МЕНЯ",
     "links": [
-      {"id": "instagram","label": "Instagram","url": "https://www.instagram.com/"},
-      {"id": "telegram","label": "Telegram","url": "https://t.me/"},
-      {"id": "facebook","label": "Facebook","url": "https://www.facebook.com/"}
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "url": "https://www.instagram.com/"
+      },
+      { "id": "telegram", "label": "Telegram", "url": "https://t.me/" },
+      {
+        "id": "facebook",
+        "label": "Facebook",
+        "url": "https://www.facebook.com/"
+      }
     ]
   },
 
@@ -219,7 +227,7 @@
     "description": "Получите полностью индивидуальный план тренировок, четкие инструкции и полную поддержку на каждом занятии. Я помогу вам тренироваться безопасно, наращивать силу, улучшать технику и достигать цели быстрее — с программой, созданной специально для вас и вашего образа жизни."
   },
 
-   "services": {
+  "services": {
     "title": "Услуги",
     "items": [
       {
@@ -234,6 +242,16 @@
         "title": "Персональные тренировки",
         "description": "Индивидуальный план, полный контроль техники и руководство, созданные специально для вас"
       }
+    ]
+  },
+
+  "sessions": {
+    "title": ["personal training for", "real results"],
+    "items": [
+      { "id": "s1", "title": "1 session", "price": 20, "currency": "EUR" },
+      { "id": "s5", "title": "5 sessions", "price": 100, "currency": "EUR" },
+      { "id": "s10", "title": "10 sessions", "price": 200, "currency": "EUR" },
+      { "id": "s20", "title": "20 sessions", "price": 400, "currency": "EUR" }
     ]
   },
 

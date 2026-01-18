@@ -3,6 +3,7 @@ import FaqSection from "@/modules/components/01_HomePage/07-Faq/Faq";
 import TrainingMenu from "@/modules/components/02_TrainingPage/02_TrainingMenu/TrainingMenu";
 import PersonalTrainingSection from "@/modules/components/02_TrainingPage/03_PersonalTraining/PersonalTraining";
 import ServicesSection from "@/modules/components/02_TrainingPage/04_Services/Services";
+import SessionsSection from "@/modules/components/02_TrainingPage/05_Sessions/Sessions";
 import RunningText from "@/modules/components/@ui/RunningText/RunningText";
 
 export default function TrainingPage() {
@@ -13,6 +14,7 @@ export default function TrainingPage() {
       <PersonalTrainingSection />
       <ServicesSection />
       <FaqSection />
+      <SessionsSection />
       <RunningText />
     </>
   );

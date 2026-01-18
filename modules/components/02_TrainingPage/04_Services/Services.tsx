@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import css from "./Services.module.css";
 import Image from "next/image";
 import { LinkButton } from "../../@ui/LinkButton/LinkButton";
