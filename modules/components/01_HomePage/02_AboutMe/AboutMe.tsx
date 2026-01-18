@@ -6,7 +6,7 @@ import { LinkButton } from "@/modules/components/@ui/LinkButton/LinkButton";
 
 export default function AboutMeSection() {
   const t = useTranslations("aboutMe");
-  const ht = useTranslations("social");
+  const socialT = useTranslations("social");
   const paragraphs = t.raw("story.paragraphs") as string[];
 
   return (
@@ -27,7 +27,7 @@ export default function AboutMeSection() {
         </div>
 
         <div className={css.content2}>
-          <h3 className={css.title}>{ht("title")}</h3>
+          <h3 className={css.title}>{socialT("title")}</h3>
           <Image
             src="/AboutMe2.webp"
             alt={"About Me Image"}
@@ -36,8 +36,8 @@ export default function AboutMeSection() {
             loading="lazy"
             className={css.image2}
           />
-          <LinkButton className={css.linkButton} href="https://instagram.com">
-            {ht("links.0.label")}
+          <LinkButton className={css.linkButton} href={socialT("links.0.url")} target="_blank" rel="noopener noreferrer">
+            {socialT("links.0.label")}
           </LinkButton>
         </div>
 
