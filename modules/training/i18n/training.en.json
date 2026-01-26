@@ -1,0 +1,40 @@
+{
+  "trainingMenu": {
+    "personalTraining": "Personal Training",
+    "onlineTraining": "Online Training",
+    "onlineNutrition": "Nutrition Plans"
+  },
+
+  "training": {
+    "title": "Personal Training",
+    "description": "Get a fully personalised workout plan, clear guidance, and full support during every session. I help you train safely, build strength, improve your form, and reach your goals faster — with a program created just for your body and lifestyle."
+  },
+
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "id": "Group Training",
+        "img": "/group-training.webp",
+        "title": "Group Training",
+        "description": "Work out in a positive group atmosphere. Support, teamwork, and fun — everything you need to stay consistent"
+      },
+      {
+        "id": "Personal Training",
+        "img": "/personal-training.webp",
+        "title": "Personal Training",
+        "description": "A personalised plan, full control of technique, and guidance made just for you"
+      }
+    ]
+  },
+
+  "sessions": {
+    "title": ["personal training for", "real results"],
+    "items": [
+      { "id": "s1", "title": "1 session", "price": 20, "currency": "EUR" },
+      { "id": "s5", "title": "5 sessions", "price": 100, "currency": "EUR" },
+      { "id": "s10", "title": "10 sessions", "price": 200, "currency": "EUR" },
+      { "id": "s20", "title": "20 sessions", "price": 400, "currency": "EUR" }
+    ]
+  }
+}

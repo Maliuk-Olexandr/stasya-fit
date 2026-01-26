@@ -10,10 +10,10 @@ import "./globals.css";
 
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import Header from "@/modules/components/Header/Header";
+import { routing } from "@/modules/shared/i18n/routing";
+import Header from "@/modules/Header/components/Header";
 import { setRequestLocale } from "next-intl/server";
-import Footer from "@/modules/components/Footer/Footer";
+import Footer from "@/modules/Footer/ui/Footer";
 
 const cormorantGaramond = Cormorant_Garamond({
   variable: "--cormorant-garamond",

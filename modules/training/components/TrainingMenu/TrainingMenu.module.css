@@ -1,0 +1,55 @@
+.section {
+  background-color: var(--foreground);
+  padding: 20px 0;
+}
+
+.menuList {
+  display: flex;
+  justify-content: center;
+}
+
+.menuItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menuItem:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: var(--main-text-color);
+}
+
+/* underline */
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  /* background-color: var(--third-text-color); */
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+}
+
+.menuItem.active {
+  color: var(--third-text-accent-color);
+}
+
+.navLink {
+  display: inline-flex;
+  font-family: var(--display-oswald);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 8px 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .navLink {
+    font-size: 1.5rem;
+    max-width: 179px;
+  }
+}

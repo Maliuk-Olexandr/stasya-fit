@@ -1,0 +1,40 @@
+{
+  "trainingMenu": {
+    "personalTraining": "Персональные тренировки",
+    "onlineTraining": "Онлайн тренировки",
+    "onlineNutrition": "Планы питания"
+  },
+
+  "training": {
+    "title": "Персональные тренировки",
+    "description": "Получите полностью индивидуальный план тренировок, четкие инструкции и полную поддержку на каждом занятии. Я помогу вам тренироваться безопасно, наращивать силу, улучшать технику и достигать цели быстрее — с программой, созданной специально для вас и вашего образа жизни."
+  },
+
+  "services": {
+    "title": "Услуги",
+    "items": [
+      {
+        "id": "Group Training",
+        "img": "/group-training.webp",
+        "title": "Групповые тренировки",
+        "description": "Тренируйтесь в позитивной атмосфере группы. Поддержка, командная работа и веселье — все, что нужно для постоянства"
+      },
+      {
+        "id": "Personal Training",
+        "img": "/personal-training.webp",
+        "title": "Персональные тренировки",
+        "description": "Индивидуальный план, полный контроль техники и руководство, созданные специально для вас"
+      }
+    ]
+  },
+
+  "sessions": {
+    "title": ["personal training for", "real results"],
+    "items": [
+      { "id": "s1", "title": "1 session", "price": 20, "currency": "EUR" },
+      { "id": "s5", "title": "5 sessions", "price": 100, "currency": "EUR" },
+      { "id": "s10", "title": "10 sessions", "price": 200, "currency": "EUR" },
+      { "id": "s20", "title": "20 sessions", "price": 400, "currency": "EUR" }
+    ]
+  }
+}
