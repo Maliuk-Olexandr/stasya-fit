@@ -1,6 +1,6 @@
 import type { Messages } from "../../shared/types/messages";
 
-type trainingMenuLinkKey = keyof Messages["training.trainingMenu"];
+type trainingMenuLinkKey = keyof Messages["training"]["trainingMenu"];
 
 export type trainingMenuLinksType = {
   href: string;
