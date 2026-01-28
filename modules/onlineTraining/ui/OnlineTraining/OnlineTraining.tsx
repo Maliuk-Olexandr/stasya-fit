@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "use-intl";
-import TrainingSection from "../../../shared/ui/TrainingSection/TrainingSection";
+import {TrainingSection} from "@/modules/shared";
 
 export default function OnlineTrainingSection() {
   const t = useTranslations("onlineTraining");

@@ -4,7 +4,7 @@ import TrainingMenu from "@/modules/training/components/TrainingMenu/TrainingMen
 import PersonalTrainingSection from "@/modules/training/components/PersonalTraining/PersonalTraining";
 import ServicesSection from "@/modules/training/components/Services/Services";
 import SessionsSection from "@/modules/training/components/Sessions/Sessions";
-import RunningText from "@/modules/shared/ui/RunningText/RunningText";
+import {RunningText} from "@/modules/shared";
 
 export default function TrainingPage() {
   return (

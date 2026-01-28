@@ -1,4 +1,4 @@
-import css from "./HowItsWorks.module.css";
+import css from "./HowItWorks.module.css";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 
@@ -8,7 +8,7 @@ type Step = {
   description: string;
 };
 
-export default function HowItsWorksSection() {
+export default function HowItWorksSection() {
   const t = useTranslations("home.howItsWorks");
   const steps = t.raw("steps") as Step[];
 

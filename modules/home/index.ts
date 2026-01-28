@@ -1,0 +1,9 @@
+export { default as AboutMeSection } from "./components/AboutMe/AboutMe";
+export { default as BeforeAfterSection } from "./components/BeforeAfter/BeforeAfter";
+export { default as CoursesListSection } from "./components/CoursesList/CoursesList";
+export { default as ExpierienceSection } from "./components/Expierience/expierience";
+export { default as FaqSection } from "./components/Faq/Faq";
+export { default as HeroSection } from "./components/Hero/Hero";
+export { default as HowItWorksSection } from "./components/HowItWorks/HowItWorks";
+export { default as JoinMeSection } from "./components/JoinMe/JoinMe";
+export { default as ReviewsSection } from "./components/Reviews/Reviews";

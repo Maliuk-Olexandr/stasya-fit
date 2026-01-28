@@ -1,9 +1,9 @@
 "use client";
-import css from "./experience.module.css";
+import css from "./expierience.module.css";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { useInViewOnce } from "../../../shared/ui/ExpirienceCounter/useInViewOnce";
-import { ExperienceCounter } from "./ExperienceCounter";
+import { useInViewOnce } from "./ExpirienceCounter/useInViewOnce";
+import { ExperienceCounter } from "./expierienceCounter";
 
 type ExperienceItem = {
   id: string;

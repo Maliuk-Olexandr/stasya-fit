@@ -1,4 +1,4 @@
-import css from "./CourseList.module.css";
+import css from "./CoursesList.module.css";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import CourseCard from "./CourseCard";
@@ -10,7 +10,7 @@ type Course = {
   features: string[];
 };
 
-export default function CourseListSection() {
+export default function CoursesListSection() {
   const t = useTranslations("home.courseList");
   const courses = t.raw("courses") as Course[];
 

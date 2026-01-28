@@ -7,7 +7,7 @@ interface Props {
 }
 
 
-export default function TrainingSection({ title, description }: Props) {
+export function TrainingSection({ title, description }: Props) {
   return (
     <section className="section">
       <div className={clsx("container", css.container)}>

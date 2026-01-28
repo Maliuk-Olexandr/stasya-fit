@@ -75,7 +75,7 @@ export const metadata: Metadata = {
       "Get a fully personalised workout plan, clear guidance, and full support during every session. I help you train safely, build strength, improve your form, and reach your goals faster — with a program created just for your body and lifestyle.",
     images: [
       {
-        url: "https://www.stasyafit.com/og-image.jpg",
+        url: "https://stasya-fit.vercel.app/stasyafit.jpg",
         width: 1200,
         height: 630,
         alt: "Stasya Fit",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     title: "Stasya Fit",
     description:
       "Get a fully personalised workout plan, clear guidance, and full support during every session. I help you train safely, build strength, improve your form, and reach your goals faster — with a program created just for your body and lifestyle.",
-    images: ["https://www.stasyafit.com/og-image.jpg"],
+    images: ["https://stasya-fit.vercel.app/stasyafit.jpg"],
   },
 };
 

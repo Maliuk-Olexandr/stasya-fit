@@ -5,8 +5,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import css from "./RunningText.module.css";
 
-export default function RunningText() {
-  const t = useTranslations("runingText");
+export function RunningText() {
+  const t = useTranslations("runningText");
   const texts = t.raw("texts") as string[];
 
   const marqueeRef = useRef<HTMLDivElement>(null);
